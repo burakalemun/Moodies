@@ -12,7 +12,7 @@ export default function Testimonials() {
         { name: "Selin A.", role: t.testimonials.review_role_3, content: t.testimonials.review_3, stars: 5, avatarBg: "bg-yellow-100", avatarColor: "text-yellow-600", initial: "S" },
         { name: "Almila Ö.", role: t.testimonials.review_role_4, content: t.testimonials.review_4, stars: 4, avatarBg: "bg-green-100", avatarColor: "text-green-600", initial: "M" },
         { name: "Nisa S.", role: t.testimonials.review_role_5, content: t.testimonials.review_5, stars: 5, avatarBg: "bg-red-100", avatarColor: "text-red-600", initial: "Z" },
-        { name: "Caner Ö.", role: t.testimonials.review_role_6, content: t.testimonials.review_6, stars: 5, avatarBg: "bg-orange-100", avatarColor: "text-orange-600", initial: "C" },
+        { name: "Gökmen K.", role: t.testimonials.review_role_6, content: t.testimonials.review_6, stars: 5, avatarBg: "bg-orange-100", avatarColor: "text-orange-600", initial: "C" },
     ];
 
     return (
