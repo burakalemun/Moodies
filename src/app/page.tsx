@@ -17,14 +17,12 @@ export default function Home() {
             <main className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-brand-100 relative">
                 <AnimatedBackground />
 
-                <Navbar />
                 <Hero />
                 <Marquee />
                 <Features />
                 <Testimonials />
                 <FAQ />
                 <CTABanner />
-                <Footer />
             </main>
         </LanguageProvider>
     );
