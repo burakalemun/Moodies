@@ -58,9 +58,9 @@ export default function Features() {
                         <div className="space-y-3 relative z-10">
                             {/* Avatar Listesi (Statik kalabilir veya çevrilebilir) */}
                             {[
-                                { name: "Ayşe", mood: "Happy", color: "text-yellow-700 bg-yellow-100", initial: "A", bg: "bg-orange-100" },
-                                { name: "Mert", mood: "Tired", color: "text-slate-600 bg-slate-200", initial: "M", bg: "bg-blue-100" },
-                                { name: "Can", mood: "Focused", color: "text-purple-700 bg-purple-100", initial: "C", bg: "bg-green-100" },
+                                { name: "Gökdeniz", mood: "Happy", color: "text-yellow-700 bg-yellow-100", initial: "A", bg: "bg-orange-100" },
+                                { name: "Emirhan", mood: "Tired", color: "text-slate-600 bg-slate-200", initial: "M", bg: "bg-blue-100" },
+                                { name: "Şeyma", mood: "Focused", color: "text-purple-700 bg-purple-100", initial: "C", bg: "bg-green-100" },
                             ].map((friend, i) => (
                                 <div key={i} className="flex items-center gap-3 bg-white p-3 rounded-2xl shadow-sm border border-slate-100/50">
                                     <div className={`w-10 h-10 rounded-full ${friend.bg} flex items-center justify-center text-sm font-bold text-slate-700`}>{friend.initial}</div>

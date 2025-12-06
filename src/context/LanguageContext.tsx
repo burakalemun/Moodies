@@ -1,40 +1,38 @@
 "use client";
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { translations } from '@/constants/translations';
 
+// Tip Tanımlamaları
 export type Language = 'tr' | 'en' | 'es' | 'de' | 'pt' | 'fr' | 'it';
 
 interface LanguageContextType {
     language: Language;
     setLanguage: (lang: Language) => void;
-    t: typeof translations['tr'];
+    t: typeof translations.tr;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-    const [language, setLanguageState] = useState<Language>('tr');
+    // Varsayılan dil (Tarayıcıdan da çekilebilir ama şimdilik 'tr')
+    const [language, setLanguage] = useState<Language>('tr');
+    const [t, setT] = useState(translations.en);
 
-    const setLanguage = (lang: Language) => {
-        setLanguageState(lang);
-    };
-
-    const t = translations[language] || translations['en'];
-
-    const value = {
-        language,
-        setLanguage,
-        t,
-    };
+    // Dil değişince çevirileri güncelle
+    useEffect(() => {
+        // Eğer translations dosyasında o dil yoksa İngilizceye fallback yap
+        setT(translations[language] || translations.en);
+    }, [language]);
 
     return (
-        <LanguageContext.Provider value={value}>
+        <LanguageContext.Provider value={{ language, setLanguage, t }}>
             {children}
         </LanguageContext.Provider>
     );
 }
 
+// Hook
 export function useLanguage() {
     const context = useContext(LanguageContext);
     if (context === undefined) {

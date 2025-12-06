@@ -2,22 +2,19 @@
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link"; // 1. Link bileşenini import ettik
 import { Globe, ChevronDown, Check, Menu, X } from "lucide-react";
 import { useLanguage, Language } from "@/context/LanguageContext";
 
 export default function Navbar() {
     const { t, language, setLanguage } = useLanguage();
 
-    // Masaüstü dil menüsü için state
     const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
-
-    // Mobil menü için state
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const langMenuRef = useRef<HTMLDivElement>(null);
     const mobileMenuRef = useRef<HTMLDivElement>(null);
 
-    // Dışarı tıklayınca menüleri kapatma
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
             if (langMenuRef.current && !langMenuRef.current.contains(event.target as Node)) {
@@ -48,11 +45,10 @@ export default function Navbar() {
     return (
         <nav className="fixed top-6 inset-x-0 z-50 flex flex-col items-center px-4 pointer-events-none">
 
-            {/* --- ANA NAVBAR (PILL) --- */}
             <div className="pointer-events-auto bg-white/80 backdrop-blur-xl border border-white/40 shadow-2xl shadow-slate-200/20 rounded-full pl-5 pr-2 py-2 flex items-center justify-between gap-4 md:gap-8 transition-all hover:shadow-slate-200/40 w-full max-w-sm md:max-w-fit relative z-[60]">
 
-                {/* --- LOGO VE İSİM (ARTIK HEP GÖRÜNÜR) --- */}
-                <div className="flex items-center gap-2 mr-auto md:mr-0">
+                {/* --- LOGO --- */}
+                <Link href="/" className="flex items-center gap-2 mr-auto md:mr-0">
                     <Image
                         src="/Moodies-logo.png"
                         alt="Moodies Logo"
@@ -60,22 +56,21 @@ export default function Navbar() {
                         height={40}
                         className="rounded-full flex-shrink-0 object-cover"
                         priority
-                        // quality={90} // Konsoldaki sarı uyarıyı gitmesi için bunu kaldırdım. Varsayılan (75) iyidir.
                     />
-                    {/* DEĞİŞİKLİK BURADA: 'hidden sm:block' kaldırdık. Artık hep görünecek. */}
                     <span className="text-xl font-extrabold tracking-tight text-slate-900 whitespace-nowrap">
                         Moodies
                     </span>
-                </div>
+                </Link>
 
-                {/* --- MASAÜSTÜ LİNKLER (Mobilde gizli) --- */}
+                {/* --- MASAÜSTÜ LİNKLER (DÜZELTİLEN KISIM) --- */}
                 <div className="hidden md:flex items-center gap-6 text-sm font-bold text-slate-500 whitespace-nowrap">
-                    <a href="#features" className="hover:text-brand-500 transition-colors">{t.navbar.features}</a>
-                    <a href="#testimonials" className="hover:text-brand-500 transition-colors">{t.navbar.testimonials}</a>
-                    <a href="#faq" className="hover:text-brand-500 transition-colors">{t.navbar.faq}</a>
+                    {/* Başına / koyduk ki ana sayfaya gidip scroll yapsın */}
+                    <Link href="/#features" className="hover:text-brand-500 transition-colors">{t.navbar.features}</Link>
+                    <Link href="/#testimonials" className="hover:text-brand-500 transition-colors">{t.navbar.testimonials}</Link>
+                    <Link href="/#faq" className="hover:text-brand-500 transition-colors">{t.navbar.faq}</Link>
                 </div>
 
-                {/* --- MASAÜSTÜ SAĞ TARAF (Dil + İndir) (Mobilde gizli) --- */}
+                {/* --- MASAÜSTÜ SAĞ TARAF --- */}
                 <div className="hidden md:flex items-center gap-3">
                     {/* Dil Menüsü */}
                     <div className="relative" ref={langMenuRef}>
@@ -129,16 +124,17 @@ export default function Navbar() {
                 </div>
             </div>
 
-            {/* --- MOBİL MENÜ İÇERİĞİ --- */}
+            {/* --- MOBİL MENÜ İÇERİĞİ (DÜZELTİLEN KISIM) --- */}
             {isMobileMenuOpen && (
                 <div
                     ref={mobileMenuRef}
                     className="pointer-events-auto absolute top-full mt-4 w-[calc(100%-2rem)] max-w-sm bg-white/90 backdrop-blur-2xl border border-white/50 shadow-2xl rounded-3xl p-6 flex flex-col gap-6 animate-in fade-in slide-in-from-top-4 duration-300 md:hidden z-[50]"
                 >
                     <div className="flex flex-col gap-4 text-center">
-                        <a href="#features" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.features}</a>
-                        <a href="#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.testimonials}</a>
-                        <a href="#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.faq}</a>
+                        {/* Mobilde de Link ve /# kullandık */}
+                        <Link href="/#features" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.features}</Link>
+                        <Link href="/#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.testimonials}</Link>
+                        <Link href="/#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.faq}</Link>
                     </div>
 
                     <div className="h-px bg-slate-200 w-full"></div>

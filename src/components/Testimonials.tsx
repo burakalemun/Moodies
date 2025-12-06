@@ -7,11 +7,11 @@ export default function Testimonials() {
 
     // Dinamik hale getirdik
     const reviews = [
-        { name: "Elif Y.", role: t.testimonials.review_role_1, content: t.testimonials.review_1, stars: 5, avatarBg: "bg-purple-100", avatarColor: "text-purple-600", initial: "E" },
+        { name: "Elif Ç.", role: t.testimonials.review_role_1, content: t.testimonials.review_1, stars: 5, avatarBg: "bg-purple-100", avatarColor: "text-purple-600", initial: "E" },
         { name: "Burak K.", role: t.testimonials.review_role_2, content: t.testimonials.review_2, stars: 5, avatarBg: "bg-blue-100", avatarColor: "text-blue-600", initial: "B" },
         { name: "Selin A.", role: t.testimonials.review_role_3, content: t.testimonials.review_3, stars: 5, avatarBg: "bg-yellow-100", avatarColor: "text-yellow-600", initial: "S" },
-        { name: "Mert D.", role: t.testimonials.review_role_4, content: t.testimonials.review_4, stars: 4, avatarBg: "bg-green-100", avatarColor: "text-green-600", initial: "M" },
-        { name: "Zeynep T.", role: t.testimonials.review_role_5, content: t.testimonials.review_5, stars: 5, avatarBg: "bg-red-100", avatarColor: "text-red-600", initial: "Z" },
+        { name: "Almila Ö.", role: t.testimonials.review_role_4, content: t.testimonials.review_4, stars: 4, avatarBg: "bg-green-100", avatarColor: "text-green-600", initial: "M" },
+        { name: "Nisa S.", role: t.testimonials.review_role_5, content: t.testimonials.review_5, stars: 5, avatarBg: "bg-red-100", avatarColor: "text-red-600", initial: "Z" },
         { name: "Caner Ö.", role: t.testimonials.review_role_6, content: t.testimonials.review_6, stars: 5, avatarBg: "bg-orange-100", avatarColor: "text-orange-600", initial: "C" },
     ];
 

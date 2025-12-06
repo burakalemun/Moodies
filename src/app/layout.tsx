@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; // 1. Google Font'u import ediyoruz
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-// Context ve Componentler
-import { LanguageProvider } from "@/context/LanguageContext";
+// YENİ OLUŞTURDUĞUMUZ BİLEŞENİ ÇAĞIRIYORUZ
+import { Providers } from "@/components/Providers";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// 2. Fontu yapılandırıyoruz (Dosya aramaya gerek yok, internetten çekecek)
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,19 +22,16 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        {/* 3. Font sınıfını body'e ekliyoruz */}
         <body className={inter.className}>
 
-        <LanguageProvider>
-            {/* Navbar en tepede */}
+        {/* ARTIK BURADA "Providers" KULLANIYORUZ */}
+        <Providers>
             <Navbar />
-
-            {/* Sayfalar burada render olacak */}
-            {children}
-
-            {/* Footer en altta */}
+            <main className="min-h-screen">
+                {children}
+            </main>
             <Footer />
-        </LanguageProvider>
+        </Providers>
 
         </body>
         </html>

@@ -13,7 +13,7 @@ export const translations = {
             description: "Moodies sadece bir günlük değil. Arkadaşlarınla etkileşime geçtiğin, duygu durumunu analiz ettiğin ve sosyalleştiğin yeni nesil bir deneyim.",
             cta: "App Store'dan İndir",
             users: "10,000+ mutlu kullanıcı",
-            notif_1_title: "Alex üzgün hissediyor 🌧️",
+            notif_1_title: "Sibel üzgün hissediyor 🌧️",
             notif_1_desc: "Bir kahve ısmarlayıp modunu yükseltmeye ne dersin?",
             notif_2_title: "Selin harika hissediyor! 🎉",
             notif_2_desc: "7 günlük serisini kutlamak için bir mesaj at!",
