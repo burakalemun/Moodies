@@ -1,0 +1,38 @@
+@import "../../node_modules/tailwindcss";
+
+@theme {
+    /* --- Renk Ayarları (Senin Yeşil Tonların) --- */
+    --color-brand-50: #ecfdf5;
+    --color-brand-100: #d1fae5;
+    --color-brand-400: #34d399;
+    --color-brand-500: #22c55e; /* Moodies Yeşili */
+    --color-brand-600: #16a34a;
+    --color-brand-900: #064e3b;
+
+    --color-accent-yellow: #fde047;
+    --color-accent-purple: #c084fc;
+
+    /* --- Animasyon Ayarları (Uçuşma Efekti) --- */
+    --animate-float: float 6s ease-in-out infinite;
+    --animate-float-delayed: float 6s ease-in-out 3s infinite;
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+}
+
+/* --- Standart Ayarlar --- */
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+}
