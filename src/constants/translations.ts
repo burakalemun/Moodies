@@ -2,33 +2,47 @@ export const translations = {
     tr: {
         navbar: {
             features: "Özellikler",
-            testimonials: "Yorumlar",
+            testimonials: "Hikayeler",
             faq: "SSS",
             download: "İndir",
         },
         hero: {
             badge: "v2.0 Yayında",
             title_1: "Duygularını Yönet,",
-            title_2: "Kendini Keşfet.",
-            description: "Moodies sadece bir günlük değil. Arkadaşlarınla etkileşime geçtiğin, duygu durumunu analiz ettiğin ve sosyalleştiğin yeni nesil bir deneyim.",
+            title_2: "Kendini Tanı.",
+            description: "Moodies sadece bir günlük değil. Arkadaşlarınla etkileşime geçtiğin, modunu analiz ettiğin ve sosyalleştiğin yeni nesil bir deneyim.",
             cta: "App Store'dan İndir",
-            users: "10,000+ mutlu kullanıcı",
+            users: "10.000+ mutlu kullanıcı",
             notif_1_title: "Sibel üzgün hissediyor 🌧️",
-            notif_1_desc: "Bir kahve ısmarlayıp modunu yükseltmeye ne dersin?",
+            notif_1_desc: "Onu neşelendirmek için bir kahve ısmarlamaya ne dersin?",
             notif_2_title: "Selin harika hissediyor! 🎉",
-            notif_2_desc: "7 günlük serisini kutlamak için bir mesaj at!",
+            notif_2_desc: "7 günlük serisini kutlamak için ona bir mesaj gönder!",
         },
         features: {
-            title: "İhtiyacın Olan Her Şey",
-            subtitle: "Moodies, sadece emoji seçmekten ibaret değil. İşte seni bekleyen özellikler.",
-            card_1_title: "Duygusal Trendler",
-            card_1_desc: "Haftalık duygu değişimlerini emojilerle gör.",
-            card_2_title: "Arkadaş Aktivitesi",
-            card_2_desc: "Reel hayatta buluşma bahanesi.",
-            card_3_title: "Gizli Günlük",
-            card_3_desc: "Anılarına notlar ekle.",
-            card_4_title: "%100 Güvenli",
-            card_4_desc: "Veriler cihazından çıkmaz.",
+            title: "Duyguların Sosyal Hali",
+            subtitle: "Moodies, seni sadece analiz etmez; seni sevdiklerinle tekrar bir araya getirir.",
+            items: [
+                {
+                    title: "Hızır Gibi Yetişen Bildirimler",
+                    desc: "3 gün üst üste mutsuz musun? Moodies bunu fark eder ve seçtiğin en yakın arkadaşına bildirim atar: 'Burak'ı ara, sana ihtiyacı olabilir.' Yalnız değilsin.",
+                    icon: "Bell"
+                },
+                {
+                    title: "Ortak Anı Defteri",
+                    desc: "O anı sadece sen yaşamadın. Arkadaşını etiketle, fotoğrafı ve hissini ekle. O anı, ikinizin de dijital günlüğünde sonsuza kadar saklansın.",
+                    icon: "Users"
+                },
+                {
+                    title: "NFC ile Hızlı Bağlantı",
+                    desc: "Yan yanayken telefonları birbirine dokundur ve anında arkadaş ol. Sosyal medyadan kop, gerçek hayattaki bağını dijitalde mühürle.",
+                    icon: "Wifi"
+                },
+                {
+                    title: "AI Duygu Analizi",
+                    desc: "Döngüye mi girdin? Yapay zeka modunu analiz eder. 'Hep aynı saatte gerginsin' diyerek sana özel farkındalık yaratır.",
+                    icon: "Brain"
+                }
+            ]
         },
         marquee: {
             happy: "Mutlu",
@@ -71,12 +85,12 @@ export const translations = {
             a4: "Sadece senin izin verdiğin arkadaşların, sadece o anki 'Mood' durumunu (Mutlu/Üzgün) görebilir. Yazdığın özel notları ASLA göremezler."
         },
         cta_banner: {
-            user_count: "10,000+ kişi katıldı",
-            title_1: "Daha iyi hissetmeye",
-            title_2: "bugün başla.",
-            description: "Duygu durumunu takip et, analizlerle kendini keşfet ve arkadaşlarınla sosyalleş. Moodies seni bekliyor.",
+            user_count: "10,000+ kişi yalnızlığı yendi",
+            title_1: "Dostluğun Gücünü",
+            title_2: "Cebinde Taşı.",
+            description: "Kendini keşfet, arkadaşlarını unutma. Moodies, modern hayatın koşturmacasında sevdiklerinle bağını koparmaman için burada.",
             button: "App Store'dan İndir",
-            subtext: "*Ömür boyu ücretsiz temel özellikler.",
+            subtext: "*Temel özellikler sonsuza kadar ücretsiz.",
         },
         footer: {
             mission: "Duygusal farkındalık kazanman ve sevdiklerinle daha derin bağlar kurman için tasarlandı.",
@@ -94,8 +108,106 @@ export const translations = {
             made_in: "İstanbul'da ❤️ ile tasarlandı.",
             system_status: "Sistemler Çalışıyor",
         },
-        // constants/translations.ts dosyasındaki 'tr' objesinin içine ekle:
+        simulator: {
+            label: "Canlı Demo",
+            title: "Moodies'i Şimdi Deneyimle.",
+            // Tablar
+            tab_home: "Modum",
+            tab_archive: "Arşiv",
+            tab_friends: "Arkadaşlar",
+            tab_stats: "İstatistik",
+            tab_profile: "Profil",
+            // Home Ekranı
+            greeting: "Bugün Nasıl Hissediyorsun?",
+            placeholder_title: "Başlık ekle...",
+            placeholder_note: "Neler hissediyorsun?",
+            btn_save: "Kaydet",
+            // Mood İsimleri
+            mood_great: "Harika",
+            mood_happy: "Mutlu",
+            mood_normal: "Normal",
+            mood_sad: "Üzgün",
+            mood_angry: "Sinirli",
+            // İstatistik Ekranı
+            stats_title: "İstatistikler",
+            filter_week: "Bu Hafta",
+            filter_month: "Bu Ay",
+            filter_all: "Tümü",
+            filter_custom: "Özel",
+            stat_avg: "Ortalama Mood",
+            stat_freq: "En Sık",
+            chart_breakdown: "Mood Dağılımı",
+            chart_timeline: "Zaman İçinde Mood",
+            section_influences: "Mood'unu Ne Etkiliyor?",
+            inf_exercise: "Egzersiz",
+            inf_work: "İş",
+            section_ai: "AI İçgörüleri",
+            ai_text: "Son 3 kaydın harika görünüyor! Hafta sonları modun %40 daha yüksek seyrediyor."
+        },
+        sticky_story: {
+            header_title: "Yalnızlık Döngüsünü Kır.",
+            header_desc: "Moodies'in en güçlü özelliğiyle tanışın.",
+            step_1_title: "1. Yalnızlık Döngüsü",
+            step_1_desc: "3 gün üst üste 'Üzgün' veya 'Stresli' girişi yaptın. Moodies yapay zekası bu negatif deseni fark eder.",
+            step_2_title: "2. Moodies Devrede",
+            step_2_desc: "Sistem, seçtiğin en yakın arkadaşına otomatik bir bildirim gönderir: 'Can'ın sana ihtiyacı olabilir.'",
+            step_3_title: "3. Gerçek Bağlantı",
+            step_3_desc: "Arkadaşın arar, buluşursunuz. O anı fotoğraflayıp 'Ortak Anı' olarak kaydedersiniz.",
+            screen_1_title: "Mood Analizi",
+            screen_1_label: "Tespit Edildi",
+            screen_1_value: "Negatif Döngü",
+            screen_1_desc: "Son 3 gündür modun düşük.",
+            screen_2_time: "Şimdi",
+            screen_2_notif_title: "Burak'ın sana ihtiyacı var 🔔",
+            screen_2_notif_desc: "3 gündür modu biraz düşük görünüyor. Onu arayıp bir kahveye çıkarmaya ne dersin?",
+            screen_3_note: "İyi ki varsın dostum! 🚀",
+            screen_3_location: "Kadıköy"
+        },
+        features_bento: {
+            // Ana Başlık
+            header_title: "İhtiyacın Olan Her Şey.",
+            header_desc: "Moodies, sadece emoji seçmekten ibaret değil. İşte seni bekleyen özellikler.",
 
+            // Kutu 1: AI Analiz
+            ai_title: "AI Mood Analizi",
+            ai_desc: "Yapay zeka, duygu kalıplarını analiz eder ve sana özel içgörüler sunar.",
+            ai_tag: "AI:",
+            ai_text: "Genelde Salı günleri daha streslisin. Toplantılarını azaltmalısın.",
+
+            // Kutu 2: Trendler
+            trends_title: "Duygusal Trendler",
+            trends_desc: "Haftalık duygu değişimlerini grafik ve emojilerle takip et.",
+
+            // Kutu 3: Yaratıcı Günlük
+            creative_title: "Dilediğin Gibi Anlat",
+            act_write: "Yaz",
+            act_speak: "Konuş",
+            act_draw: "Çiz",
+            act_add: "Ekle",
+
+            // Kutu 4: Arkadaş Aktivitesi
+            friends_title: "Arkadaş Aktivitesi",
+            friends_desc: "Reel hayatta buluşma bahanesi. Kimler müsait gör.",
+            friend_1_time: "2 saat önce",
+            friend_1_mood: "Mutlu",
+            friend_2_time: "5 saat önce",
+            friend_2_mood: "Yorgun"
+        },
+        widgets: {
+            tag: "iOS 18 Uyumlu",
+            title_1: "Ana Ekranında,",
+            title_2: "Dostların Hep Yanında.",
+            description: "Sadece mood takibi değil. Arkadaşlarına çizimler gönder, widget üzerinden onlara sürpriz notlar bırak.",
+            tags: ["Canlı Etkinlikler", "Çizim Widget'ı", "İnteraktif"],
+
+            // Widget İçerikleri
+            friend_status: "Burak Uykulu",
+            time_ago: "5dk önce güncellendi",
+            drawing_from: "Selin'den",
+            weekly_mood: "Haftalık Mood",
+            streak_title: "7 Günlük Seri!",
+            streak_subtitle: "Harikasın"
+        },
         privacy: {
             title: "Gizlilik Politikası",
             last_updated: "Son Güncelleme: 6 Aralık 2024",
@@ -241,6 +353,106 @@ export const translations = {
             rights: "All rights reserved.",
             made_in: "Designed with ❤️ in Istanbul.",
             system_status: "Systems Operational",
+        },
+        simulator: {
+            label: "Live Demo",
+            title: "Experience Moodies Now.",
+            // Tabs
+            tab_home: "My Mood",
+            tab_archive: "Archive",
+            tab_friends: "Friends",
+            tab_stats: "Stats",
+            tab_profile: "Profile",
+            // Home Screen
+            greeting: "How Are You Feeling Today?",
+            placeholder_title: "Add title...",
+            placeholder_note: "What are you feeling?",
+            btn_save: "Save",
+            // Mood Names
+            mood_great: "Great",
+            mood_happy: "Happy",
+            mood_normal: "Normal",
+            mood_sad: "Sad",
+            mood_angry: "Angry",
+            // Stats Screen
+            stats_title: "Statistics",
+            filter_week: "This Week",
+            filter_month: "This Month",
+            filter_all: "All Time",
+            filter_custom: "Custom",
+            stat_avg: "Average Mood",
+            stat_freq: "Most Frequent",
+            chart_breakdown: "Mood Breakdown",
+            chart_timeline: "Mood Over Time",
+            section_influences: "What Affects Your Mood?",
+            inf_exercise: "Exercise",
+            inf_work: "Work",
+            section_ai: "AI Insights",
+            ai_text: "Your last 3 entries look great! Your mood trends 40% higher on weekends."
+        },
+        sticky_story: {
+            header_title: "Break the Loneliness Cycle.",
+            header_desc: "Meet Moodies' most powerful feature.",
+            step_1_title: "1. Loneliness Cycle",
+            step_1_desc: "You logged 'Sad' or 'Stressed' 3 days in a row. Moodies AI detects this negative pattern.",
+            step_2_title: "2. Moodies Steps In",
+            step_2_desc: "The system sends an auto-notification to your best friend: 'Alex might need you.'",
+            step_3_title: "3. Real Connection",
+            step_3_desc: "Your friend calls, you meet up. You snap a photo and save it as a 'Shared Memory'.",
+            screen_1_title: "Mood Analysis",
+            screen_1_label: "Detected",
+            screen_1_value: "Negative Cycle",
+            screen_1_desc: "Your mood has been low for the last 3 days.",
+            screen_2_time: "Now",
+            screen_2_notif_title: "Ben needs you 🔔",
+            screen_2_notif_desc: "His mood looks low for 3 days. How about calling him out for coffee?",
+            screen_3_note: "So glad to have you, buddy! 🚀",
+            screen_3_location: "Downtown"
+        },
+        features_bento: {
+            // Main Header
+            header_title: "Everything You Need.",
+            header_desc: "Moodies is more than just picking emojis. Here's what awaits you.",
+
+            // Box 1: AI Analysis
+            ai_title: "AI Mood Analysis",
+            ai_desc: "AI analyzes emotional patterns and offers personalized insights.",
+            ai_tag: "AI:",
+            ai_text: "You are usually more stressed on Tuesdays. You should reduce meetings.",
+
+            // Box 2: Trends
+            trends_title: "Emotional Trends",
+            trends_desc: "Track weekly mood changes with charts and emojis.",
+
+            // Box 3: Creative Journal
+            creative_title: "Express Yourself Freely",
+            act_write: "Write",
+            act_speak: "Speak",
+            act_draw: "Draw",
+            act_add: "Add",
+
+            // Box 4: Friend Activity
+            friends_title: "Friend Activity",
+            friends_desc: "An excuse to meet in real life. See who is available.",
+            friend_1_time: "2 hours ago",
+            friend_1_mood: "Happy",
+            friend_2_time: "5 hours ago",
+            friend_2_mood: "Tired"
+        },
+        widgets: {
+            tag: "iOS 18 Ready",
+            title_1: "On Your Home Screen,",
+            title_2: "Friends Always Close.",
+            description: "Not just mood tracking. Send drawings to friends, leave surprise notes directly on the widget.",
+            tags: ["Live Activities", "Drawing Widget", "Interactive"],
+
+            // Widget Content
+            friend_status: "Ben is Sleepy",
+            time_ago: "Updated 5m ago",
+            drawing_from: "From Sarah",
+            weekly_mood: "Weekly Mood",
+            streak_title: "7 Day Streak!",
+            streak_subtitle: "You're Awesome"
         },
         privacy: {
             title: "Privacy Policy",
@@ -388,6 +600,106 @@ export const translations = {
             made_in: "Diseñado con ❤️ en Estambul.",
             system_status: "Sistemas Operativos",
         },
+        simulator: {
+            label: "Demo en Vivo",
+            title: "Experimenta Moodies Ahora.",
+            // Tabs
+            tab_home: "Mi Ánimo",
+            tab_archive: "Archivo",
+            tab_friends: "Amigos",
+            tab_stats: "Estadísticas",
+            tab_profile: "Perfil",
+            // Home Screen
+            greeting: "¿Cómo te sientes hoy?",
+            placeholder_title: "Añadir título...",
+            placeholder_note: "¿Qué estás sintiendo?",
+            btn_save: "Guardar",
+            // Mood Names
+            mood_great: "Genial",
+            mood_happy: "Feliz",
+            mood_normal: "Normal",
+            mood_sad: "Triste",
+            mood_angry: "Enojado",
+            // Stats Screen
+            stats_title: "Estadísticas",
+            filter_week: "Esta Semana",
+            filter_month: "Este Mes",
+            filter_all: "Todo",
+            filter_custom: "Personalizar",
+            stat_avg: "Ánimo Promedio",
+            stat_freq: "Más Frecuente",
+            chart_breakdown: "Desglose de Ánimo",
+            chart_timeline: "Ánimo en el Tiempo",
+            section_influences: "¿Qué afecta tu ánimo?",
+            inf_exercise: "Ejercicio",
+            inf_work: "Trabajo",
+            section_ai: "Insights de IA",
+            ai_text: "¡Tus últimas 3 entradas se ven geniales! Tu ánimo es un 40% más alto los fines de semana."
+        },
+        sticky_story: {
+            header_title: "Rompe el Ciclo de Soledad.",
+            header_desc: "Conoce la función más poderosa de Moodies.",
+            step_1_title: "1. Ciclo de Soledad",
+            step_1_desc: "Registraste 'Triste' o 'Estresado' 3 días seguidos. La IA de Moodies detecta este patrón negativo.",
+            step_2_title: "2. Moodies Actúa",
+            step_2_desc: "El sistema envía una notificación automática a tu mejor amigo: 'Leo podría necesitarte.'",
+            step_3_title: "3. Conexión Real",
+            step_3_desc: "Tu amigo llama, se encuentran. Toman una foto y la guardan como un 'Recuerdo Compartido'.",
+            screen_1_title: "Análisis de Ánimo",
+            screen_1_label: "Detectado",
+            screen_1_value: "Ciclo Negativo",
+            screen_1_desc: "Tu ánimo ha estado bajo los últimos 3 días.",
+            screen_2_time: "Ahora",
+            screen_2_notif_title: "Diego te necesita 🔔",
+            screen_2_notif_desc: "Su ánimo parece bajo hace 3 días. ¿Qué tal si lo invitas a un café?",
+            screen_3_note: "¡Eres lo máximo, amigo! 🚀",
+            screen_3_location: "Centro"
+        },
+        features_bento: {
+            // Main Header
+            header_title: "Todo lo que Necesitas.",
+            header_desc: "Moodies no es solo elegir emojis. Aquí tienes lo que te espera.",
+
+            // Box 1: AI Analysis
+            ai_title: "Análisis de Ánimo IA",
+            ai_desc: "La IA analiza patrones emocionales y ofrece insights personalizados.",
+            ai_tag: "IA:",
+            ai_text: "Sueles estar más estresado los martes. Deberías reducir reuniones.",
+
+            // Box 2: Trends
+            trends_title: "Tendencias Emocionales",
+            trends_desc: "Sigue tus cambios semanales con gráficos y emojis.",
+
+            // Box 3: Creative Journal
+            creative_title: "Exprésate a tu Manera",
+            act_write: "Escribir",
+            act_speak: "Hablar",
+            act_draw: "Dibujar",
+            act_add: "Añadir",
+
+            // Box 4: Friend Activity
+            friends_title: "Actividad de Amigos",
+            friends_desc: "Una excusa para verse en persona. Mira quién está libre.",
+            friend_1_time: "hace 2h",
+            friend_1_mood: "Feliz",
+            friend_2_time: "hace 5h",
+            friend_2_mood: "Cansado"
+        },
+        widgets: {
+            tag: "Listo para iOS 18",
+            title_1: "En tu Pantalla de Inicio,",
+            title_2: "Amigos Siempre Cerca.",
+            description: "No es solo seguimiento de ánimo. Envía dibujos y deja notas sorpresa desde el widget.",
+            tags: ["Actividades en Vivo", "Widget de Dibujo", "Interactivo"],
+
+            // Widget Content
+            friend_status: "Diego tiene sueño",
+            time_ago: "Actualizado hace 5m",
+            drawing_from: "De Sofía",
+            weekly_mood: "Ánimo Semanal",
+            streak_title: "¡Racha de 7 Días!",
+            streak_subtitle: "Genial"
+        },
         privacy: {
             title: "Política de Privacidad",
             last_updated: "Última actualización: 6 de diciembre de 2024",
@@ -533,6 +845,106 @@ export const translations = {
             rights: "Alle Rechte vorbehalten.",
             made_in: "Entworfen mit ❤️ in Istanbul.",
             system_status: "Systeme Online",
+        },
+        simulator: {
+            label: "Live-Demo",
+            title: "Erlebe Moodies jetzt.",
+            // Tabs
+            tab_home: "Stimmung",
+            tab_archive: "Archiv",
+            tab_friends: "Freunde",
+            tab_stats: "Statistik",
+            tab_profile: "Profil",
+            // Home Screen
+            greeting: "Wie fühlst du dich heute?",
+            placeholder_title: "Titel hinzufügen...",
+            placeholder_note: "Was fühlst du?",
+            btn_save: "Speichern",
+            // Mood Names
+            mood_great: "Großartig",
+            mood_happy: "Glücklich",
+            mood_normal: "Normal",
+            mood_sad: "Traurig",
+            mood_angry: "Wütend",
+            // Stats Screen
+            stats_title: "Statistiken",
+            filter_week: "Diese Woche",
+            filter_month: "Diesen Monat",
+            filter_all: "Gesamt",
+            filter_custom: "Benutzerdefiniert",
+            stat_avg: "Durchschn. Stimmung",
+            stat_freq: "Häufigste",
+            chart_breakdown: "Stimmungsverteilung",
+            chart_timeline: "Stimmungsverlauf",
+            section_influences: "Was beeinflusst dich?",
+            inf_exercise: "Training",
+            inf_work: "Arbeit",
+            section_ai: "KI-Erkenntnisse",
+            ai_text: "Deine letzten 3 Einträge sehen toll aus! Deine Stimmung ist am Wochenende um 40% besser."
+        },
+        sticky_story: {
+            header_title: "Durchbrich den Einsamkeits-Zyklus.",
+            header_desc: "Lerne Moodies' stärkstes Feature kennen.",
+            step_1_title: "1. Einsamkeits-Spirale",
+            step_1_desc: "3 Tage in Folge 'Traurig' oder 'Gestresst'. Die Moodies-KI erkennt dieses negative Muster.",
+            step_2_title: "2. Moodies wird aktiv",
+            step_2_desc: "Das System benachrichtigt automatisch deinen besten Freund: 'Jan braucht dich vielleicht.'",
+            step_3_title: "3. Echte Verbindung",
+            step_3_desc: "Dein Freund ruft an, ihr trefft euch. Ihr macht ein Foto und speichert es als 'Gemeinsame Erinnerung'.",
+            screen_1_title: "Stimmungsanalyse",
+            screen_1_label: "Erkannt",
+            screen_1_value: "Negativ-Zyklus",
+            screen_1_desc: "Deine Stimmung ist seit 3 Tagen tief.",
+            screen_2_time: "Jetzt",
+            screen_2_notif_title: "Lukas braucht dich 🔔",
+            screen_2_notif_desc: "Seine Stimmung ist seit 3 Tagen im Keller. Wie wäre es mit einem Kaffee?",
+            screen_3_note: "Gut, dass es dich gibt! 🚀",
+            screen_3_location: "Stadtmitte"
+        },
+        features_bento: {
+            // Main Header
+            header_title: "Alles, was du brauchst.",
+            header_desc: "Moodies ist mehr als nur Emojis. Das erwartet dich:",
+
+            // Box 1: AI Analysis
+            ai_title: "KI-Stimmungsanalyse",
+            ai_desc: "Die KI analysiert Gefühlsmuster und bietet persönliche Einblicke.",
+            ai_tag: "KI:",
+            ai_text: "Dienstags bist du oft gestresster. Reduziere deine Meetings.",
+
+            // Box 2: Trends
+            trends_title: "Emotionale Trends",
+            trends_desc: "Verfolge wöchentliche Stimmungsschwankungen mit Grafiken.",
+
+            // Box 3: Creative Journal
+            creative_title: "Erzähl es, wie du willst",
+            act_write: "Schreiben",
+            act_speak: "Sprechen",
+            act_draw: "Malen",
+            act_add: "Einfügen",
+
+            // Box 4: Friend Activity
+            friends_title: "Freunde-Aktivität",
+            friends_desc: "Ein Grund für echte Treffen. Sieh nach, wer Zeit hat.",
+            friend_1_time: "vor 2 Std.",
+            friend_1_mood: "Glücklich",
+            friend_2_time: "vor 5 Std.",
+            friend_2_mood: "Müde"
+        },
+        widgets: {
+            tag: "iOS 18 Bereit",
+            title_1: "Auf deinem Home-Screen,",
+            title_2: "Freunde immer dabei.",
+            description: "Nicht nur Stimmungstracking. Sende Zeichnungen und hinterlasse Überraschungsnotizen über das Widget.",
+            tags: ["Live-Aktivitäten", "Zeichnen-Widget", "Interaktiv"],
+
+            // Widget Content
+            friend_status: "Jan ist müde",
+            time_ago: "Vor 5 Min. aktualisiert",
+            drawing_from: "Von Lisa",
+            weekly_mood: "Wochenstimmung",
+            streak_title: "7-Tage-Serie!",
+            streak_subtitle: "Großartig"
         },
         privacy: {
             title: "Datenschutzerklärung",
@@ -680,6 +1092,106 @@ export const translations = {
             made_in: "Projetado com ❤️ em Istambul.",
             system_status: "Sistemas Operacionais",
         },
+        simulator: {
+            label: "Demo ao Vivo",
+            title: "Experimente o Moodies Agora.",
+            // Tabs
+            tab_home: "Meu Humor",
+            tab_archive: "Arquivo",
+            tab_friends: "Amigos",
+            tab_stats: "Estatísticas",
+            tab_profile: "Perfil",
+            // Home Screen
+            greeting: "Como você se sente hoje?",
+            placeholder_title: "Adicionar título...",
+            placeholder_note: "O que você está sentindo?",
+            btn_save: "Salvar",
+            // Mood Names
+            mood_great: "Ótimo",
+            mood_happy: "Feliz",
+            mood_normal: "Normal",
+            mood_sad: "Triste",
+            mood_angry: "Com Raiva",
+            // Stats Screen
+            stats_title: "Estatísticas",
+            filter_week: "Esta Semana",
+            filter_month: "Este Mês",
+            filter_all: "Tudo",
+            filter_custom: "Personalizado",
+            stat_avg: "Humor Médio",
+            stat_freq: "Mais Frequente",
+            chart_breakdown: "Distribuição de Humor",
+            chart_timeline: "Linha do Tempo",
+            section_influences: "O que afeta seu humor?",
+            inf_exercise: "Exercício",
+            inf_work: "Trabalho",
+            section_ai: "Insights de IA",
+            ai_text: "Seus últimos 3 registros parecem ótimos! Seu humor tende a ser 40% melhor nos fins de semana."
+        },
+        sticky_story: {
+            header_title: "Quebre o Ciclo da Solidão.",
+            header_desc: "Conheça o recurso mais poderoso do Moodies.",
+            step_1_title: "1. Ciclo de Solidão",
+            step_1_desc: "Você registrou 'Triste' ou 'Estressado' por 3 dias seguidos. A IA do Moodies detecta esse padrão.",
+            step_2_title: "2. Moodies em Ação",
+            step_2_desc: "O sistema envia uma notificação para seu melhor amigo: 'João pode precisar de você.'",
+            step_3_title: "3. Conexão Real",
+            step_3_desc: "Seu amigo liga, vocês se encontram. Tiram uma foto e salvam como 'Memória Compartilhada'.",
+            screen_1_title: "Análise de Humor",
+            screen_1_label: "Detectado",
+            screen_1_value: "Ciclo Negativo",
+            screen_1_desc: "Seu humor tem estado baixo nos últimos 3 dias.",
+            screen_2_time: "Agora",
+            screen_2_notif_title: "Pedro precisa de você 🔔",
+            screen_2_notif_desc: "O humor dele parece baixo há 3 dias. Que tal chamá-lo para um café?",
+            screen_3_note: "Bom demais ter você, amigo! 🚀",
+            screen_3_location: "Centro"
+        },
+        features_bento: {
+            // Main Header
+            header_title: "Tudo o que Você Precisa.",
+            header_desc: "Moodies é mais que escolher emojis. Veja o que te espera.",
+
+            // Box 1: AI Analysis
+            ai_title: "Análise de Humor IA",
+            ai_desc: "A IA analisa padrões emocionais e oferece insights personalizados.",
+            ai_tag: "IA:",
+            ai_text: "Geralmente você fica mais estressado às terças. Reduza as reuniões.",
+
+            // Box 2: Trends
+            trends_title: "Tendências Emocionais",
+            trends_desc: "Acompanhe as mudanças semanais com gráficos e emojis.",
+
+            // Box 3: Creative Journal
+            creative_title: "Expresse do Seu Jeito",
+            act_write: "Escrever",
+            act_speak: "Falar",
+            act_draw: "Desenhar",
+            act_add: "Adicionar",
+
+            // Box 4: Friend Activity
+            friends_title: "Atividade dos Amigos",
+            friends_desc: "Desculpa para encontrar na vida real. Veja quem está livre.",
+            friend_1_time: "há 2 horas",
+            friend_1_mood: "Feliz",
+            friend_2_time: "há 5 horas",
+            friend_2_mood: "Cansado"
+        },
+        widgets: {
+            tag: "Pronto para iOS 18",
+            title_1: "Na Sua Tela Inicial,",
+            title_2: "Amigos Sempre Perto.",
+            description: "Não é só rastreamento de humor. Envie desenhos e deixe notas surpresa via widget.",
+            tags: ["Atividades ao Vivo", "Widget de Desenho", "Interativo"],
+
+            // Widget Content
+            friend_status: "João com sono",
+            time_ago: "Atualizado há 5min",
+            drawing_from: "De Ana",
+            weekly_mood: "Humor Semanal",
+            streak_title: "Sequência de 7 Dias!",
+            streak_subtitle: "Incrível"
+        },
         privacy: {
             title: "Política de Privacidade",
             last_updated: "Última atualização: 6 de dezembro de 2024",
@@ -826,6 +1338,106 @@ export const translations = {
             made_in: "Conçu avec ❤️ à Istanbul.",
             system_status: "Systèmes Opérationnels",
         },
+        simulator: {
+            label: "Démo en Direct",
+            title: "Découvrez Moodies Maintenant.",
+            // Tabs
+            tab_home: "Humeur",
+            tab_archive: "Archives",
+            tab_friends: "Amis",
+            tab_stats: "Stats",
+            tab_profile: "Profil",
+            // Home Screen
+            greeting: "Comment vous sentez-vous ?",
+            placeholder_title: "Ajouter un titre...",
+            placeholder_note: "Que ressentez-vous ?",
+            btn_save: "Enregistrer",
+            // Mood Names
+            mood_great: "Super",
+            mood_happy: "Heureux",
+            mood_normal: "Normal",
+            mood_sad: "Triste",
+            mood_angry: "En Colère",
+            // Stats Screen
+            stats_title: "Statistiques",
+            filter_week: "Cette Semaine",
+            filter_month: "Ce Mois",
+            filter_all: "Tout",
+            filter_custom: "Personnalisé",
+            stat_avg: "Humeur Moyenne",
+            stat_freq: "Plus Fréquent",
+            chart_breakdown: "Répartition",
+            chart_timeline: "Évolution de l'Humeur",
+            section_influences: "Qu'est-ce qui vous influence ?",
+            inf_exercise: "Sport",
+            inf_work: "Travail",
+            section_ai: "Analyses IA",
+            ai_text: "Vos 3 dernières entrées sont superbes ! Votre humeur est 40% plus élevée le week-end."
+        },
+        sticky_story: {
+            header_title: "Brisez le Cycle de Solitude.",
+            header_desc: "Découvrez la fonction la plus puissante de Moodies.",
+            step_1_title: "1. Cycle de Solitude",
+            step_1_desc: "Vous avez noté 'Triste' ou 'Stressé' 3 jours de suite. L'IA Moodies repère ce schéma négatif.",
+            step_2_title: "2. Moodies Intervient",
+            step_2_desc: "Le système notifie votre meilleur ami : 'Thomas a peut-être besoin de toi.'",
+            step_3_title: "3. Vraie Connexion",
+            step_3_desc: "Votre ami appelle, vous vous voyez. Vous prenez une photo et l'enregistrez en 'Souvenir Partagé'.",
+            screen_1_title: "Analyse d'Humeur",
+            screen_1_label: "Détecté",
+            screen_1_value: "Cycle Négatif",
+            screen_1_desc: "Votre humeur est basse depuis 3 jours.",
+            screen_2_time: "Maintenant",
+            screen_2_notif_title: "Lucas a besoin de toi 🔔",
+            screen_2_notif_desc: "Son moral semble bas depuis 3 jours. Et si tu l'invitais à un café ?",
+            screen_3_note: "Merci d'être là mon pote ! 🚀",
+            screen_3_location: "Centre-ville"
+        },
+        features_bento: {
+            // Main Header
+            header_title: "Tout ce dont vous avez besoin.",
+            header_desc: "Moodies, c'est plus que des émojis. Voici ce qui vous attend.",
+
+            // Box 1: AI Analysis
+            ai_title: "Analyse d'Humeur IA",
+            ai_desc: "L'IA analyse vos schémas émotionnels et offre des conseils perso.",
+            ai_tag: "IA :",
+            ai_text: "Vous êtes souvent stressé le mardi. Réduisez vos réunions.",
+
+            // Box 2: Trends
+            trends_title: "Tendances Émotionnelles",
+            trends_desc: "Suivez l'évolution de votre humeur avec graphiques et émojis.",
+
+            // Box 3: Creative Journal
+            creative_title: "Exprimez-vous Librement",
+            act_write: "Écrire",
+            act_speak: "Parler",
+            act_draw: "Dessiner",
+            act_add: "Ajouter",
+
+            // Box 4: Friend Activity
+            friends_title: "Activité des Amis",
+            friends_desc: "Une excuse pour se voir en vrai. Voyez qui est dispo.",
+            friend_1_time: "il y a 2h",
+            friend_1_mood: "Heureux",
+            friend_2_time: "il y a 5h",
+            friend_2_mood: "Fatigué"
+        },
+        widgets: {
+            tag: "Prêt pour iOS 18",
+            title_1: "Sur votre Écran d'Accueil,",
+            title_2: "Vos Amis toujours là.",
+            description: "Pas juste un suivi d'humeur. Envoyez des dessins et laissez des notes surprises via le widget.",
+            tags: ["Activités en Direct", "Widget Dessin", "Interactif"],
+
+            // Widget Content
+            friend_status: "Thomas a sommeil",
+            time_ago: "Mis à jour il y a 5 min",
+            drawing_from: "De Chloé",
+            weekly_mood: "Humeur Hebdo",
+            streak_title: "Série de 7 Jours !",
+            streak_subtitle: "Super"
+        },
         privacy: {
             title: "Politique de Confidentialité",
             last_updated: "Dernière mise à jour : 6 décembre 2024",
@@ -971,6 +1583,106 @@ export const translations = {
             rights: "Tutti i diritti riservati.",
             made_in: "Progettato con ❤️ a Istanbul.",
             system_status: "Sistemi Operativi",
+        },
+        simulator: {
+            label: "Demo Live",
+            title: "Prova Moodies Ora.",
+            // Tabs
+            tab_home: "Mio Umore",
+            tab_archive: "Archivio",
+            tab_friends: "Amici",
+            tab_stats: "Statistiche",
+            tab_profile: "Profilo",
+            // Home Screen
+            greeting: "Come ti senti oggi?",
+            placeholder_title: "Aggiungi titolo...",
+            placeholder_note: "Cosa stai provando?",
+            btn_save: "Salva",
+            // Mood Names
+            mood_great: "Fantastico",
+            mood_happy: "Felice",
+            mood_normal: "Normale",
+            mood_sad: "Triste",
+            mood_angry: "Arrabbiato",
+            // Stats Screen
+            stats_title: "Statistiche",
+            filter_week: "Questa Settimana",
+            filter_month: "Questo Mese",
+            filter_all: "Tutto",
+            filter_custom: "Personalizzato",
+            stat_avg: "Umore Medio",
+            stat_freq: "Più Frequente",
+            chart_breakdown: "Ripartizione Umore",
+            chart_timeline: "Umore nel Tempo",
+            section_influences: "Cosa influenza il tuo umore?",
+            inf_exercise: "Esercizio",
+            inf_work: "Lavoro",
+            section_ai: "Insights IA",
+            ai_text: "Le tue ultime 3 voci sembrano ottime! Il tuo umore è più alto del 40% nei fine settimana."
+        },
+        sticky_story: {
+            header_title: "Rompi il Ciclo della Solitudine.",
+            header_desc: "Scopri la funzione più potente di Moodies.",
+            step_1_title: "1. Ciclo di Solitudine",
+            step_1_desc: "Hai registrato 'Triste' o 'Stressato' per 3 giorni di fila. L'IA Moodies rileva questo schema negativo.",
+            step_2_title: "2. Moodies si Attiva",
+            step_2_desc: "Il sistema invia una notifica al tuo migliore amico: 'Marco potrebbe aver bisogno di te.'",
+            step_3_title: "3. Connessione Reale",
+            step_3_desc: "Il tuo amico chiama, vi incontrate. Scattate una foto e la salvate come 'Ricordo Condiviso'.",
+            screen_1_title: "Analisi Umore",
+            screen_1_label: "Rilevato",
+            screen_1_value: "Ciclo Negativo",
+            screen_1_desc: "Il tuo umore è basso da 3 giorni.",
+            screen_2_time: "Adesso",
+            screen_2_notif_title: "Luca ha bisogno di te 🔔",
+            screen_2_notif_desc: "È un po' giù da 3 giorni. Che ne dici di invitarlo per un caffè?",
+            screen_3_note: "Menomale che ci sei! 🚀",
+            screen_3_location: "Centro"
+        },
+        features_bento: {
+            // Main Header
+            header_title: "Tutto Ciò che Ti Serve.",
+            header_desc: "Moodies non è solo emoji. Ecco le funzionalità che ti aspettano.",
+
+            // Box 1: AI Analysis
+            ai_title: "Analisi Umore IA",
+            ai_desc: "L'IA analizza i pattern emotivi e offre spunti personalizzati.",
+            ai_tag: "IA:",
+            ai_text: "Di solito sei più stressato il martedì. Riduci le riunioni.",
+
+            // Box 2: Trends
+            trends_title: "Trend Emotivi",
+            trends_desc: "Segui i cambiamenti settimanali con grafici ed emoji.",
+
+            // Box 3: Creative Journal
+            creative_title: "Raccontalo come Vuoi",
+            act_write: "Scrivi",
+            act_speak: "Parla",
+            act_draw: "Disegna",
+            act_add: "Aggiungi",
+
+            // Box 4: Friend Activity
+            friends_title: "Attività Amici",
+            friends_desc: "Una scusa per vedersi dal vivo. Vedi chi è libero.",
+            friend_1_time: "2 ore fa",
+            friend_1_mood: "Felice",
+            friend_2_time: "5 ore fa",
+            friend_2_mood: "Stanco"
+        },
+        widgets: {
+            tag: "Pronto per iOS 18",
+            title_1: "Sulla Home Screen,",
+            title_2: "Amici Sempre Vicini.",
+            description: "Non solo mood tracking. Invia disegni e lascia note a sorpresa direttamente dal widget.",
+            tags: ["Attività Live", "Widget Disegno", "Interattivo"],
+
+            // Widget Content
+            friend_status: "Marco ha sonno",
+            time_ago: "Aggiornato 5 min fa",
+            drawing_from: "Da Giulia",
+            weekly_mood: "Umore Settimanale",
+            streak_title: "Serie di 7 Giorni!",
+            streak_subtitle: "Grande"
         },
         privacy: {
             title: "Informativa sulla Privacy",

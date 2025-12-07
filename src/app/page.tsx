@@ -3,11 +3,17 @@
 import Navbar from "@/components/Navbar"; // Navbar'ı buradan da silebilirsin aslında, Layout'ta varsa. Ama kalsın şimdilik.
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
+import FriendshipFlow from "@/components/FriendshipFlow";
 import Features from "@/components/Features";
+import MoodDemo from "@/components/MoodDemo";
+import StickyStory from "@/components/StickyStory";
+import BentoFeatures from "@/components/BentoFeatures";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import CTABanner from "@/components/CTABanner";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import WidgetsShowcase from "@/components/WidgetsShowcase";
+import AppSimulator from "@/components/AppSimulator";
 
 export default function Home() {
     return (
@@ -19,7 +25,17 @@ export default function Home() {
 
             <Hero />
             <Marquee />
-            <Features />
+
+            <AppSimulator />
+
+
+            {/*<FriendshipFlow />*/}
+            {/*<Features />*/}
+            <StickyStory />
+            <BentoFeatures />
+
+            <WidgetsShowcase />
+
             <Testimonials />
             <FAQ />
             <CTABanner />
