@@ -279,16 +279,30 @@ export const translations = {
             notif_2_desc: "Send a message to celebrate her 7-day streak!",
         },
         features: {
-            title: "Everything You Need",
-            subtitle: "Moodies is more than just picking emojis. Here is what awaits you.",
-            card_1_title: "Emotional Trends",
-            card_1_desc: "Visualize your weekly mood changes with emojis.",
-            card_2_title: "Friend Activity",
-            card_2_desc: "A perfect excuse to meet up in real life.",
-            card_3_title: "Secret Journal",
-            card_3_desc: "Add notes to your memories.",
-            card_4_title: "100% Secure",
-            card_4_desc: "Data never leaves your device.",
+            title: "The Social Side of Emotions",
+            subtitle: "Moodies doesn't just analyze you; it brings you back together with your loved ones.",
+            items: [
+                {
+                    title: "Timely Rescue Notifications",
+                    desc: "Unhappy for 3 days straight? Moodies notices and notifies your best friend: 'Call Alex, he might need you.' You're not alone.",
+                    icon: "Bell"
+                },
+                {
+                    title: "Shared Memory Journal",
+                    desc: "You didn't live that moment alone. Tag your friend, add the photo and feeling. Let that moment be saved forever in both of your digital journals.",
+                    icon: "Users"
+                },
+                {
+                    title: "Quick Connect with NFC",
+                    desc: "Tap your phones together when you're side-by-side and become friends instantly. Ditch social media, seal your real-life bond digitally.",
+                    icon: "Wifi"
+                },
+                {
+                    title: "AI Mood Analysis",
+                    desc: "Stuck in a cycle? AI analyzes your mood. It creates personal awareness by telling you, 'You're always tense at the same time.'",
+                    icon: "Brain"
+                }
+            ]
         },
         marquee: {
             happy: "Happy",
@@ -525,16 +539,30 @@ export const translations = {
             notif_2_desc: "¡Envía un mensaje para celebrar su racha de 7 días!",
         },
         features: {
-            title: "Todo lo que Necesitas",
-            subtitle: "Moodies es más que solo elegir emojis. Esto es lo que te espera.",
-            card_1_title: "Tendencias Emocionales",
-            card_1_desc: "Visualiza tus cambios de humor semanales con emojis.",
-            card_2_title: "Actividad de Amigos",
-            card_2_desc: "La excusa perfecta para reunirse en la vida real.",
-            card_3_title: "Diario Secreto",
-            card_3_desc: "Añade notas a tus recuerdos.",
-            card_4_title: "100% Seguro",
-            card_4_desc: "Los datos nunca salen de tu dispositivo.",
+            title: "El Lado Social de las Emociones",
+            subtitle: "Moodies no solo te analiza; te reconecta con tus seres queridos.",
+            items: [
+                {
+                    title: "Notificaciones de Rescate",
+                    desc: "¿Triste 3 días seguidos? Moodies lo nota y avisa a tu mejor amigo: 'Llama a Diego, podría necesitarte.' No estás solo.",
+                    icon: "Bell"
+                },
+                {
+                    title: "Diario de Recuerdos Compartidos",
+                    desc: "No viviste ese momento solo. Etiqueta a tu amigo, añade la foto y tu sentir. Ese momento se guardará para siempre en los diarios de ambos.",
+                    icon: "Users"
+                },
+                {
+                    title: "Conexión Rápida con NFC",
+                    desc: "Juntad vuestros móviles y haceos amigos al instante. Desconecta de las redes y sella tu vínculo real en el mundo digital.",
+                    icon: "Wifi"
+                },
+                {
+                    title: "Análisis de Ánimo con IA",
+                    desc: "¿Atrapado en un ciclo? La IA analiza tu estado de ánimo y crea conciencia diciéndote: 'Sueles estar tenso a la misma hora.'",
+                    icon: "Brain"
+                }
+            ]
         },
         marquee: {
             happy: "Feliz",
@@ -771,16 +799,30 @@ export const translations = {
             notif_2_desc: "Schreib eine Nachricht, um ihre 7-Tage-Serie zu feiern!",
         },
         features: {
-            title: "Alles was du brauchst",
-            subtitle: "Moodies ist mehr als nur Emojis auswählen. Hier ist, was dich erwartet.",
-            card_1_title: "Emotionale Trends",
-            card_1_desc: "Visualisiere deine wöchentlichen Stimmungsschwankungen mit Emojis.",
-            card_2_title: "Aktivität der Freunde",
-            card_2_desc: "Der perfekte Grund, sich im echten Leben zu treffen.",
-            card_3_title: "Geheimes Tagebuch",
-            card_3_desc: "Füge Notizen zu deinen Erinnerungen hinzu.",
-            card_4_title: "100% Sicher",
-            card_4_desc: "Daten verlassen dein Gerät niemals.",
+            title: "Die soziale Seite der Gefühle",
+            subtitle: "Moodies analysiert dich nicht nur; es bringt dich wieder mit deinen Liebsten zusammen.",
+            items: [
+                {
+                    title: "Rettungs-Benachrichtigungen",
+                    desc: "3 Tage unglücklich? Moodies merkt das und benachrichtigt deinen besten Freund: 'Ruf Jan an, er braucht dich vielleicht.' Du bist nicht allein.",
+                    icon: "Bell"
+                },
+                {
+                    title: "Geteiltes Erinnerungsbuch",
+                    desc: "Diesen Moment hast du nicht allein erlebt. Markiere deinen Freund, füge das Foto und dein Gefühl hinzu. So bleibt der Moment in euren beiden digitalen Tagebüchern.",
+                    icon: "Users"
+                },
+                {
+                    title: "Schnellverbindung via NFC",
+                    desc: "Haltet eure Handys aneinander und werdet sofort Freunde. Besiegelt eure echte Verbindung digital, statt auf Social Media.",
+                    icon: "Wifi"
+                },
+                {
+                    title: "KI-Gefühlsanalyse",
+                    desc: "Steckst du fest? Die KI analysiert deine Stimmung und schafft Bewusstsein, indem sie sagt: 'Du bist immer zur gleichen Zeit angespannt.'",
+                    icon: "Brain"
+                }
+            ]
         },
         marquee: {
             happy: "Glücklich",
@@ -1017,16 +1059,30 @@ export const translations = {
             notif_2_desc: "Manda uma mensagem para celebrar os 7 dias seguidos dela!",
         },
         features: {
-            title: "Tudo o que Você Precisa",
-            subtitle: "Moodies é mais do que apenas escolher emojis. Aqui está o que te espera.",
-            card_1_title: "Tendências Emocionais",
-            card_1_desc: "Visualize suas mudanças de humor semanais com emojis.",
-            card_2_title: "Atividade dos Amigos",
-            card_2_desc: "A desculpa perfeita para encontrar na vida real.",
-            card_3_title: "Diário Secreto",
-            card_3_desc: "Adicione notas às suas memórias.",
-            card_4_title: "100% Seguro",
-            card_4_desc: "Os dados nunca saem do seu dispositivo.",
+            title: "O Lado Social das Emoções",
+            subtitle: "O Moodies não apenas te analisa; ele te reconecta com quem você ama.",
+            items: [
+                {
+                    title: "Notificações que Salvam o Dia",
+                    desc: "Infeliz por 3 dias seguidos? O Moodies percebe e avisa seu melhor amigo: 'Ligue para o João, ele pode precisar de você.' Você não está sozinho.",
+                    icon: "Bell"
+                },
+                {
+                    title: "Diário de Memórias Partilhadas",
+                    desc: "Você não viveu aquele momento sozinho. Marque seu amigo, adicione a foto e o sentimento. O momento ficará guardado para sempre nos diários de ambos.",
+                    icon: "Users"
+                },
+                {
+                    title: "Conexão Rápida com NFC",
+                    desc: "Toquem os celulares um no outro e tornem-se amigos na hora. Abandone as redes sociais, sele sua conexão da vida real no digital.",
+                    icon: "Wifi"
+                },
+                {
+                    title: "Análise de Humor com IA",
+                    desc: "Preso num ciclo? A IA analisa seu humor. Ela cria consciência ao dizer: 'Você está sempre tenso no mesmo horário.'",
+                    icon: "Brain"
+                }
+            ]
         },
         marquee: {
             happy: "Feliz",
@@ -1263,16 +1319,30 @@ export const translations = {
             notif_2_desc: "Envoie un message pour fêter sa série de 7 jours !",
         },
         features: {
-            title: "Tout ce dont tu as besoin",
-            subtitle: "Moodies, c'est plus que choisir des émojis. Voici ce qui t'attend.",
-            card_1_title: "Tendances Émotionnelles",
-            card_1_desc: "Visualise tes changements d'humeur hebdomadaires avec des émojis.",
-            card_2_title: "Activité des Amis",
-            card_2_desc: "L'excuse parfaite pour se voir dans la vraie vie.",
-            card_3_title: "Journal Secret",
-            card_3_desc: "Ajoute des notes à tes souvenirs.",
-            card_4_title: "100% Sécurisé",
-            card_4_desc: "Les données ne quittent jamais ton appareil.",
+            title: "La Dimension Sociale des Émotions",
+            subtitle: "Moodies ne fait pas que vous analyser ; il vous reconnecte à vos proches.",
+            items: [
+                {
+                    title: "Notifications à la Rescousse",
+                    desc: "Triste 3 jours de suite ? Moodies le remarque et prévient votre meilleur ami : 'Appelle Thomas, il a peut-être besoin de toi.' Vous n'êtes pas seul.",
+                    icon: "Bell"
+                },
+                {
+                    title: "Journal de Souvenirs Partagés",
+                    desc: "Vous n'avez pas vécu ce moment seul. Taguez votre ami, ajoutez la photo et l'émotion. Ce souvenir sera gardé pour toujours dans vos deux journaux numériques.",
+                    icon: "Users"
+                },
+                {
+                    title: "Connexion Rapide par NFC",
+                    desc: "Touchez vos téléphones pour devenir amis instantanément. Oubliez les réseaux sociaux, scellez votre lien réel dans le monde numérique.",
+                    icon: "Wifi"
+                },
+                {
+                    title: "Analyse d'Humeur par IA",
+                    desc: "Coincé dans une boucle ? L'IA analyse votre humeur et vous éveille en disant : 'Vous êtes souvent tendu à la même heure.'",
+                    icon: "Brain"
+                }
+            ]
         },
         marquee: {
             happy: "Heureux",
@@ -1509,16 +1579,30 @@ export const translations = {
             notif_2_desc: "Manda un messaggio per festeggiare la sua serie di 7 giorni!",
         },
         features: {
-            title: "Tutto ciò di cui hai bisogno",
-            subtitle: "Moodies è più che scegliere emoji. Ecco cosa ti aspetta.",
-            card_1_title: "Trend Emotivi",
-            card_1_desc: "Visualizza i tuoi cambiamenti d'umore settimanali con le emoji.",
-            card_2_title: "Attività degli Amici",
-            card_2_desc: "La scusa perfetta per incontrarsi nella vita reale.",
-            card_3_title: "Diario Segreto",
-            card_3_desc: "Aggiungi note ai tuoi ricordi.",
-            card_4_title: "100% Sicuro",
-            card_4_desc: "I dati non lasciano mai il tuo dispositivo.",
+            title: "Il Lato Sociale delle Emozioni",
+            subtitle: "Moodies non ti analizza soltanto; ti riconnette con le persone a cui tieni.",
+            items: [
+                {
+                    title: "Notifiche che Arrivano al Momento Giusto",
+                    desc: "Triste per 3 giorni di fila? Moodies se ne accorge e avvisa il tuo migliore amico: 'Chiama Marco, potrebbe aver bisogno di te.' Non sei solo.",
+                    icon: "Bell"
+                },
+                {
+                    title: "Diario dei Ricordi Condivisi",
+                    desc: "Non hai vissuto quel momento da solo. Tagga il tuo amico, aggiungi la foto e l'emozione. Quel momento resterà per sempre nei diari di entrambi.",
+                    icon: "Users"
+                },
+                {
+                    title: "Connessione Rapida con NFC",
+                    desc: "Avvicinate i telefoni per diventare subito amici. Sigilla il tuo legame reale nel mondo digitale, non sui social media.",
+                    icon: "Wifi"
+                },
+                {
+                    title: "Analisi Emotiva con IA",
+                    desc: "Bloccato in un loop? L'IA analizza il tuo umore. Crea consapevolezza dicendoti: 'Sei spesso teso alla stessa ora.'",
+                    icon: "Brain"
+                }
+            ]
         },
         marquee: {
             happy: "Felice",
