@@ -137,12 +137,31 @@ export const translations = {
             stat_avg: "Ortalama Mood",
             stat_freq: "En Sık",
             chart_breakdown: "Mood Dağılımı",
+            chart_subtitle: "Haftalık Dağılım",
             chart_timeline: "Zaman İçinde Mood",
+            chart_timeline_sub: "Son 7 Gün",
             section_influences: "Mood'unu Ne Etkiliyor?",
             inf_exercise: "Egzersiz",
-            inf_work: "İş",
-            section_ai: "AI İçgörüleri",
-            ai_text: "Son 3 kaydın harika görünüyor! Hafta sonları modun %40 daha yüksek seyrediyor."
+            unit_times: "kez",
+            // Tarih İfadeleri
+            time_today: "Bugün",
+            time_yesterday: "Dün",
+            // Mock Data (Demo Verileri)
+            mock_title_1: "Proje Onaylandı! 🚀",
+            mock_note_1: "Tasarım onayı aldık.",
+            mock_title_2: "Sabah Kahvesi",
+            mock_note_2: "Güne harika başladım.",
+            mock_title_3: "Trafik",
+            mock_note_3: "Köprü trafiği bitmiyor.",
+            mock_title_4: "Rutin İşler",
+            mock_note_4: "Standart bir gün.",
+            mock_title_5: "Eski Fotoğraflar",
+            mock_note_5: "Biraz nostalji.",
+            mock_title_6: "Spor",
+            mock_note_6: "Bacak antrenmanı.",
+            // Diğer
+            soon_title: "Çok Yakında",
+            soon_desc: "Bu özellik geliştirme aşamasında."
         },
         sticky_story: {
             header_title: "Yalnızlık Döngüsünü Kır.",
@@ -169,10 +188,10 @@ export const translations = {
             header_desc: "Moodies, sadece emoji seçmekten ibaret değil. İşte seni bekleyen özellikler.",
 
             // Kutu 1: AI Analiz
-            ai_title: "AI Mood Analizi",
-            ai_desc: "Yapay zeka, duygu kalıplarını analiz eder ve sana özel içgörüler sunar.",
-            ai_tag: "AI:",
-            ai_text: "Genelde Salı günleri daha streslisin. Toplantılarını azaltmalısın.",
+            ai_title: "Gizli Kalıpları Keşfet", // "AI Mood Analizi" yerine
+            ai_desc: "Bazen neden öyle hissettiğini gözden kaçırabilirsin. Moodies, senin fark etmediğin bağlantıları kurar.",
+            ai_tag: "İpucu:", // "AI:" yerine daha dostane bir ifade
+            ai_text: "Salı günleri stres seviyen artıyor. Programını hafifletmek iyi gelebilir.",
 
             // Kutu 2: Trendler
             trends_title: "Duygusal Trendler",
@@ -380,7 +399,7 @@ export const translations = {
             // Home Screen
             greeting: "How Are You Feeling Today?",
             placeholder_title: "Add title...",
-            placeholder_note: "What are you feeling?",
+            placeholder_note: "How do you feel?",
             btn_save: "Save",
             // Mood Names
             mood_great: "Great",
@@ -397,12 +416,31 @@ export const translations = {
             stat_avg: "Average Mood",
             stat_freq: "Most Frequent",
             chart_breakdown: "Mood Breakdown",
+            chart_subtitle: "Weekly Distribution",
             chart_timeline: "Mood Over Time",
+            chart_timeline_sub: "Last 7 Days",
             section_influences: "What Affects Your Mood?",
             inf_exercise: "Exercise",
-            inf_work: "Work",
-            section_ai: "AI Insights",
-            ai_text: "Your last 3 entries look great! Your mood trends 40% higher on weekends."
+            unit_times: "times",
+            // Date Expressions
+            time_today: "Today",
+            time_yesterday: "Yesterday",
+            // Mock Data
+            mock_title_1: "Project Approved! 🚀",
+            mock_note_1: "Design got approved.",
+            mock_title_2: "Morning Coffee",
+            mock_note_2: "Started the day great.",
+            mock_title_3: "Traffic",
+            mock_note_3: "Traffic never ends.",
+            mock_title_4: "Routine Tasks",
+            mock_note_4: "Just a standard day.",
+            mock_title_5: "Old Photos",
+            mock_note_5: "A bit of nostalgia.",
+            mock_title_6: "Workout",
+            mock_note_6: "Leg day training.",
+            // Other
+            soon_title: "Coming Soon",
+            soon_desc: "This feature is under development."
         },
         sticky_story: {
             header_title: "Break the Loneliness Cycle.",
@@ -630,9 +668,9 @@ export const translations = {
         },
         simulator: {
             label: "Demo en Vivo",
-            title: "Experimenta Moodies Ahora.",
+            title: "Prueba Moodies Ahora.",
             // Tabs
-            tab_home: "Mi Ánimo",
+            tab_home: "Mi Estado",
             tab_archive: "Archivo",
             tab_friends: "Amigos",
             tab_stats: "Estadísticas",
@@ -640,7 +678,7 @@ export const translations = {
             // Home Screen
             greeting: "¿Cómo te sientes hoy?",
             placeholder_title: "Añadir título...",
-            placeholder_note: "¿Qué estás sintiendo?",
+            placeholder_note: "¿Qué sientes?",
             btn_save: "Guardar",
             // Mood Names
             mood_great: "Genial",
@@ -653,16 +691,35 @@ export const translations = {
             filter_week: "Esta Semana",
             filter_month: "Este Mes",
             filter_all: "Todo",
-            filter_custom: "Personalizar",
-            stat_avg: "Ánimo Promedio",
+            filter_custom: "Personalizado",
+            stat_avg: "Estado Promedio",
             stat_freq: "Más Frecuente",
             chart_breakdown: "Desglose de Ánimo",
+            chart_subtitle: "Distribución Semanal",
             chart_timeline: "Ánimo en el Tiempo",
+            chart_timeline_sub: "Últimos 7 Días",
             section_influences: "¿Qué afecta tu ánimo?",
             inf_exercise: "Ejercicio",
-            inf_work: "Trabajo",
-            section_ai: "Insights de IA",
-            ai_text: "¡Tus últimas 3 entradas se ven geniales! Tu ánimo es un 40% más alto los fines de semana."
+            unit_times: "veces",
+            // Date Expressions
+            time_today: "Hoy",
+            time_yesterday: "Ayer",
+            // Mock Data
+            mock_title_1: "¡Proyecto Aprobado! 🚀",
+            mock_note_1: "Aprobaron el diseño.",
+            mock_title_2: "Café Matutino",
+            mock_note_2: "Empecé el día genial.",
+            mock_title_3: "Tráfico",
+            mock_note_3: "El tráfico nunca termina.",
+            mock_title_4: "Tareas de Rutina",
+            mock_note_4: "Un día estándar.",
+            mock_title_5: "Fotos Viejas",
+            mock_note_5: "Un poco de nostalgia.",
+            mock_title_6: "Entrenamiento",
+            mock_note_6: "Día de pierna.",
+            // Other
+            soon_title: "Próximamente",
+            soon_desc: "Esta función está en desarrollo."
         },
         sticky_story: {
             header_title: "Rompe el Ciclo de Soledad.",
@@ -890,7 +947,7 @@ export const translations = {
         },
         simulator: {
             label: "Live-Demo",
-            title: "Erlebe Moodies jetzt.",
+            title: "Moodies jetzt erleben.",
             // Tabs
             tab_home: "Stimmung",
             tab_archive: "Archiv",
@@ -903,7 +960,7 @@ export const translations = {
             placeholder_note: "Was fühlst du?",
             btn_save: "Speichern",
             // Mood Names
-            mood_great: "Großartig",
+            mood_great: "Super",
             mood_happy: "Glücklich",
             mood_normal: "Normal",
             mood_sad: "Traurig",
@@ -914,15 +971,34 @@ export const translations = {
             filter_month: "Diesen Monat",
             filter_all: "Gesamt",
             filter_custom: "Benutzerdefiniert",
-            stat_avg: "Durchschn. Stimmung",
+            stat_avg: "Ø Stimmung",
             stat_freq: "Häufigste",
             chart_breakdown: "Stimmungsverteilung",
+            chart_subtitle: "Wöchentliche Verteilung",
             chart_timeline: "Stimmungsverlauf",
-            section_influences: "Was beeinflusst dich?",
+            chart_timeline_sub: "Letzte 7 Tage",
+            section_influences: "Einflüsse auf Stimmung",
             inf_exercise: "Training",
-            inf_work: "Arbeit",
-            section_ai: "KI-Erkenntnisse",
-            ai_text: "Deine letzten 3 Einträge sehen toll aus! Deine Stimmung ist am Wochenende um 40% besser."
+            unit_times: "mal",
+            // Date Expressions
+            time_today: "Heute",
+            time_yesterday: "Gestern",
+            // Mock Data
+            mock_title_1: "Projekt Genehmigt! 🚀",
+            mock_note_1: "Design wurde freigegeben.",
+            mock_title_2: "Morgenkaffee",
+            mock_note_2: "Super in den Tag gestartet.",
+            mock_title_3: "Stau",
+            mock_note_3: "Der Verkehr endet nie.",
+            mock_title_4: "Routineaufgaben",
+            mock_note_4: "Ein ganz normaler Tag.",
+            mock_title_5: "Alte Fotos",
+            mock_note_5: "Ein bisschen Nostalgie.",
+            mock_title_6: "Sport",
+            mock_note_6: "Beintraining erledigt.",
+            // Other
+            soon_title: "Demnächst",
+            soon_desc: "Diese Funktion ist in Entwicklung."
         },
         sticky_story: {
             header_title: "Durchbrich den Einsamkeits-Zyklus.",
@@ -1152,7 +1228,7 @@ export const translations = {
             label: "Demo ao Vivo",
             title: "Experimente o Moodies Agora.",
             // Tabs
-            tab_home: "Meu Humor",
+            tab_home: "Humor",
             tab_archive: "Arquivo",
             tab_friends: "Amigos",
             tab_stats: "Estatísticas",
@@ -1176,13 +1252,32 @@ export const translations = {
             filter_custom: "Personalizado",
             stat_avg: "Humor Médio",
             stat_freq: "Mais Frequente",
-            chart_breakdown: "Distribuição de Humor",
-            chart_timeline: "Linha do Tempo",
-            section_influences: "O que afeta seu humor?",
+            chart_breakdown: "Divisão de Humor",
+            chart_subtitle: "Distribuição Semanal",
+            chart_timeline: "Humor ao Longo do Tempo",
+            chart_timeline_sub: "Últimos 7 Dias",
+            section_influences: "O Que Afeta Seu Humor?",
             inf_exercise: "Exercício",
-            inf_work: "Trabalho",
-            section_ai: "Insights de IA",
-            ai_text: "Seus últimos 3 registros parecem ótimos! Seu humor tende a ser 40% melhor nos fins de semana."
+            unit_times: "vezes",
+            // Date Expressions
+            time_today: "Hoje",
+            time_yesterday: "Ontem",
+            // Mock Data
+            mock_title_1: "Projeto Aprovado! 🚀",
+            mock_note_1: "Design foi aprovado.",
+            mock_title_2: "Café da Manhã",
+            mock_note_2: "Comecei o dia ótimo.",
+            mock_title_3: "Trânsito",
+            mock_note_3: "O trânsito não acaba.",
+            mock_title_4: "Tarefas de Rotina",
+            mock_note_4: "Um dia padrão.",
+            mock_title_5: "Fotos Antigas",
+            mock_note_5: "Um pouco de nostalgia.",
+            mock_title_6: "Treino",
+            mock_note_6: "Treino de pernas.",
+            // Other
+            soon_title: "Em Breve",
+            soon_desc: "Este recurso está em desenvolvimento."
         },
         sticky_story: {
             header_title: "Quebre o Ciclo da Solidão.",
@@ -1410,7 +1505,7 @@ export const translations = {
         },
         simulator: {
             label: "Démo en Direct",
-            title: "Découvrez Moodies Maintenant.",
+            title: "Essayez Moodies Maintenant.",
             // Tabs
             tab_home: "Humeur",
             tab_archive: "Archives",
@@ -1427,7 +1522,7 @@ export const translations = {
             mood_happy: "Heureux",
             mood_normal: "Normal",
             mood_sad: "Triste",
-            mood_angry: "En Colère",
+            mood_angry: "Énervé",
             // Stats Screen
             stats_title: "Statistiques",
             filter_week: "Cette Semaine",
@@ -1436,13 +1531,32 @@ export const translations = {
             filter_custom: "Personnalisé",
             stat_avg: "Humeur Moyenne",
             stat_freq: "Plus Fréquent",
-            chart_breakdown: "Répartition",
-            chart_timeline: "Évolution de l'Humeur",
-            section_influences: "Qu'est-ce qui vous influence ?",
-            inf_exercise: "Sport",
-            inf_work: "Travail",
-            section_ai: "Analyses IA",
-            ai_text: "Vos 3 dernières entrées sont superbes ! Votre humeur est 40% plus élevée le week-end."
+            chart_breakdown: "Répartition d'Humeur",
+            chart_subtitle: "Distribution Hebdomadaire",
+            chart_timeline: "Humeur dans le Temps",
+            chart_timeline_sub: "7 Derniers Jours",
+            section_influences: "Ce qui affecte votre humeur?",
+            inf_exercise: "Exercice",
+            unit_times: "fois",
+            // Date Expressions
+            time_today: "Aujourd'hui",
+            time_yesterday: "Hier",
+            // Mock Data
+            mock_title_1: "Projet Approuvé ! 🚀",
+            mock_note_1: "Le design est validé.",
+            mock_title_2: "Café du Matin",
+            mock_note_2: "Super début de journée.",
+            mock_title_3: "Embouteillages",
+            mock_note_3: "Le trafic n'en finit pas.",
+            mock_title_4: "Routine",
+            mock_note_4: "Une journée standard.",
+            mock_title_5: "Vieilles Photos",
+            mock_note_5: "Un peu de nostalgie.",
+            mock_title_6: "Sport",
+            mock_note_6: "Entraînement des jambes.",
+            // Other
+            soon_title: "Bientôt",
+            soon_desc: "Fonctionnalité en développement."
         },
         sticky_story: {
             header_title: "Brisez le Cycle de Solitude.",
@@ -1672,7 +1786,7 @@ export const translations = {
             label: "Demo Live",
             title: "Prova Moodies Ora.",
             // Tabs
-            tab_home: "Mio Umore",
+            tab_home: "Umore",
             tab_archive: "Archivio",
             tab_friends: "Amici",
             tab_stats: "Statistiche",
@@ -1680,7 +1794,7 @@ export const translations = {
             // Home Screen
             greeting: "Come ti senti oggi?",
             placeholder_title: "Aggiungi titolo...",
-            placeholder_note: "Cosa stai provando?",
+            placeholder_note: "Cosa senti?",
             btn_save: "Salva",
             // Mood Names
             mood_great: "Fantastico",
@@ -1696,13 +1810,32 @@ export const translations = {
             filter_custom: "Personalizzato",
             stat_avg: "Umore Medio",
             stat_freq: "Più Frequente",
-            chart_breakdown: "Ripartizione Umore",
+            chart_breakdown: "Analisi dell'Umore",
+            chart_subtitle: "Distribuzione Settimanale",
             chart_timeline: "Umore nel Tempo",
+            chart_timeline_sub: "Ultimi 7 Giorni",
             section_influences: "Cosa influenza il tuo umore?",
             inf_exercise: "Esercizio",
-            inf_work: "Lavoro",
-            section_ai: "Insights IA",
-            ai_text: "Le tue ultime 3 voci sembrano ottime! Il tuo umore è più alto del 40% nei fine settimana."
+            unit_times: "volte",
+            // Date Expressions
+            time_today: "Oggi",
+            time_yesterday: "Ieri",
+            // Mock Data
+            mock_title_1: "Progetto Approvato! 🚀",
+            mock_note_1: "Design approvato.",
+            mock_title_2: "Caffè Mattutino",
+            mock_note_2: "Iniziato alla grande.",
+            mock_title_3: "Traffico",
+            mock_note_3: "Il traffico non finisce mai.",
+            mock_title_4: "Routine",
+            mock_note_4: "Una giornata standard.",
+            mock_title_5: "Vecchie Foto",
+            mock_note_5: "Un po' di nostalgia.",
+            mock_title_6: "Allenamento",
+            mock_note_6: "Allenamento gambe.",
+            // Other
+            soon_title: "Prossimamente",
+            soon_desc: "Funzionalità in fase di sviluppo."
         },
         sticky_story: {
             header_title: "Rompi il Ciclo della Solitudine.",
