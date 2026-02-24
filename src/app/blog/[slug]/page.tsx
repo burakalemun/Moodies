@@ -83,6 +83,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {/* JSON-LD */}
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
+            {/* Breadcrumb */}
+            <div className="max-w-3xl mx-auto px-4 pt-6 pb-2">
+                <Link
+                    href="/blog"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-brand-600 transition-colors group"
+                >
+                    <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+                    Tüm Yazılar
+                </Link>
+            </div>
+
             {/* Hero Kapak */}
             <div className={`bg-gradient-to-br ${post.coverColor} py-20 px-4 relative overflow-hidden`}>
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#fff 1px, transparent 1px)", backgroundSize: "24px 24px" }} />

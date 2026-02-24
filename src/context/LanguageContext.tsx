@@ -17,7 +17,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export function LanguageProvider({ children }: { children: ReactNode }) {
     // Varsayılan dil (Tarayıcıdan da çekilebilir ama şimdilik 'tr')
     const [language, setLanguage] = useState<Language>('tr');
-    const [t, setT] = useState(translations.en);
+    const [t, setT] = useState(translations.tr);
 
     // Dil değişince çevirileri güncelle
     useEffect(() => {

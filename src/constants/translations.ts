@@ -15,7 +15,7 @@ export const translations = {
             users: "10.000+ mutlu kullanıcı",
             notif_1_title: "Sibel üzgün hissediyor 🌧️",
             notif_1_desc: "Onu neşelendirmek için bir kahve ısmarlamaya ne dersin?",
-            notif_2_title: "Selin harika hissediyor! 🎉",
+            notif_2_title: "Cemre harika hissediyor! 🎉",
             notif_2_desc: "7 günlük serisini kutlamak için ona bir mesaj gönder!",
         },
         features: {
@@ -222,7 +222,7 @@ export const translations = {
             // Widget İçerikleri
             friend_status: "Burak Uykulu",
             time_ago: "5dk önce güncellendi",
-            drawing_from: "Selin'den",
+            drawing_from: "Cemre'den",
             weekly_mood: "Haftalık Mood",
             streak_title: "7 Günlük Seri!",
             streak_subtitle: "Harikasın"
@@ -294,7 +294,7 @@ export const translations = {
             users: "10,000+ happy users",
             notif_1_title: "Sibel is feeling sad 🌧️",
             notif_1_desc: "How about buying a coffee to cheer them up?",
-            notif_2_title: "Selin is feeling great! 🎉",
+            notif_2_title: "Cemre is feeling great! 🎉",
             notif_2_desc: "Send a message to celebrate her 7-day streak!",
         },
         features: {
@@ -573,7 +573,7 @@ export const translations = {
             users: "10,000+ usuarios felices",
             notif_1_title: "Sibel se siente triste 🌧️",
             notif_1_desc: "¿Qué tal si le invitas un café para animarlo?",
-            notif_2_title: "Selin se siente genial! 🎉",
+            notif_2_title: "Cemre se siente genial! 🎉",
             notif_2_desc: "¡Envía un mensaje para celebrar su racha de 7 días!",
         },
         features: {
@@ -852,7 +852,7 @@ export const translations = {
             users: "10,000+ glückliche Nutzer",
             notif_1_title: "Sibel fühlt sich traurig 🌧️",
             notif_1_desc: "Wie wäre es, ihn auf einen Kaffee einzuladen?",
-            notif_2_title: "Selin fühlt sich großartig! 🎉",
+            notif_2_title: "Cemre fühlt sich großartig! 🎉",
             notif_2_desc: "Schreib eine Nachricht, um ihre 7-Tage-Serie zu feiern!",
         },
         features: {
@@ -1131,7 +1131,7 @@ export const translations = {
             users: "10,000+ usuários felizes",
             notif_1_title: "Sibel está triste 🌧️",
             notif_1_desc: "Que tal pagar um café para animar?",
-            notif_2_title: "Selin está se sentindo ótima! 🎉",
+            notif_2_title: "Cemre está se sentindo ótima! 🎉",
             notif_2_desc: "Manda uma mensagem para celebrar os 7 dias seguidos dela!",
         },
         features: {
@@ -1410,7 +1410,7 @@ export const translations = {
             users: "10,000+ utilisateurs heureux",
             notif_1_title: "Sibel se sent triste 🌧️",
             notif_1_desc: "Pourquoi ne pas lui offrir un café pour lui remonter le moral ?",
-            notif_2_title: "Selin se sent super bien ! 🎉",
+            notif_2_title: "Cemre se sent super bien ! 🎉",
             notif_2_desc: "Envoie un message pour fêter sa série de 7 jours !",
         },
         features: {
@@ -1689,7 +1689,7 @@ export const translations = {
             users: "10,000+ utenti felici",
             notif_1_title: "Sibel si sente triste 🌧️",
             notif_1_desc: "Che ne dici di offrirgli un caffè per tirarlo su?",
-            notif_2_title: "Selin si sente alla grande! 🎉",
+            notif_2_title: "Cemre si sente alla grande! 🎉",
             notif_2_desc: "Manda un messaggio per festeggiare la sua serie di 7 giorni!",
         },
         features: {

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import {BarChart3, MapPin, Heart, Activity, LayoutGrid, User, Users, Smile, Share2, MoreHorizontal} from "lucide-react";
+import { BarChart3, MapPin, Heart, Activity, LayoutGrid, User, Users, Smile, Share2, MoreHorizontal } from "lucide-react";
 
 export default function StickyStory() {
     const { t, language } = useLanguage(); // 't' objesi burada önemli
@@ -57,11 +57,10 @@ export default function StickyStory() {
                                 <motion.div
                                     onViewportEnter={() => setActiveStep(index)}
                                     viewport={{ margin: "-50% 0px -50% 0px" }}
-                                    className={`flex flex-col justify-center p-8 rounded-3xl border-2 transition-all duration-500 ${
-                                        activeStep === index
+                                    className={`flex flex-col justify-center p-8 rounded-3xl border-2 transition-all duration-500 ${activeStep === index
                                             ? "opacity-100 border-slate-100 bg-slate-50 shadow-lg scale-100"
                                             : "opacity-40 border-transparent scale-95"
-                                    }`}
+                                        }`}
                                 >
                                     <div className={`w-fit px-4 py-2 rounded-full ${step.bg} ${step.color} text-sm font-bold mb-4 uppercase`}>
                                         {/* ADIM kelimesi dillerde farklı olabilir ama şimdilik TR/EN basit tuttum, istersen bunu da çeviriye alabiliriz */}
@@ -142,7 +141,7 @@ function ScreenStep1() {
                             </linearGradient>
                             {/* Çizgiye derinlik katmak için gölge filtresi */}
                             <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-                                <feDropShadow dx="0" dy="4" stdDeviation="3" floodColor="#22c55e" floodOpacity="0.3"/>
+                                <feDropShadow dx="0" dy="4" stdDeviation="3" floodColor="#22c55e" floodOpacity="0.3" />
                             </filter>
                         </defs>
 
@@ -233,22 +232,25 @@ function ScreenStep2() {
     return (
         <div className="w-full h-full relative overflow-hidden font-sans select-none">
 
-            {/* 1. iOS Tarzı Duvar Kağıdı */}
-            {/* Unsplash'ten derinlik hissi veren, iOS stok duvar kağıtlarına benzeyen bir görsel */}
+            {/* 1. iOS Tarzı Duvar Kağıdı — CSS gradient ile yapılan aurora efekti */}
             <div
-                className="absolute inset-0 bg-cover bg-center z-0 scale-105"
+                className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop')",
-                    filter: "brightness(0.9)"
+                    background: "linear-gradient(135deg, #1a0533 0%, #2d1b69 30%, #0f4c81 60%, #1a2a6c 100%)",
                 }}
-            ></div>
+            >
+                {/* Dinamik ışık efektleri */}
+                <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 30% 20%, rgba(120,80,255,0.4) 0%, transparent 60%)" }} />
+                <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 70% 80%, rgba(0,150,255,0.3) 0%, transparent 50%)" }} />
+                <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 60% 40%, rgba(255,100,200,0.15) 0%, transparent 40%)" }} />
+            </div>
 
             {/* 2. Üst Kısım: Saat ve Tarih */}
             <div className="relative z-10 pt-16 flex flex-col items-center text-white drop-shadow-md">
                 {/* Kilit Simgesi (Opsiyonel, FaceID açılmış gibi) */}
                 <div className="mb-2">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="opacity-80">
-                        <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 1 1 6 0v2H9V6z"/>
+                        <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-9h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 1 1 6 0v2H9V6z" />
                     </svg>
                 </div>
 
@@ -324,16 +326,16 @@ function ScreenStep2() {
 function ScreenStep3() {
     const { t } = useLanguage();
 
-    // Arka plan ve ana fotoğraf için görsel (Arkadaşlarla kahve/sohbet ortamı)
-    const memoryImage = "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1000&auto=format&fit=crop";
+    // Anı sayfası için yerel SVG arka plan
+    const memoryGradient = "linear-gradient(135deg, #fceabb 0%, #f8b88b 40%, #fda085 70%, #f093fb 100%)";
 
     return (
         <div className="w-full h-full relative bg-slate-50 overflow-hidden font-sans">
 
-            {/* 1. Atmosferik Arka Plan (Ana resmin bulanık hali) */}
+            {/* 1. Atmosferik Arka Plan (CSS gradient) */}
             <div
-                className="absolute inset-0 bg-cover bg-center opacity-30 blur-3xl scale-125"
-                style={{ backgroundImage: `url(${memoryImage})` }}
+                className="absolute inset-0"
+                style={{ background: memoryGradient, opacity: 0.25 }}
             ></div>
 
             {/* 2. Header (Uygulama İçi Başlık) */}
@@ -350,13 +352,16 @@ function ScreenStep3() {
             {/* 3. Ana Anı Kartı */}
             <div className="absolute top-[18%] left-4 right-4 bottom-8 flex flex-col gap-4">
 
-                {/* Fotoğraf Alanı */}
-                <div className="relative flex-1 rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-300/50 group">
-                    <img
-                        src={memoryImage}
-                        alt="Friends Meeting"
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
+                {/* Fotoğraf Alanı — CSS gradient kart */}
+                <div className="relative flex-1 rounded-[2rem] overflow-hidden shadow-2xl shadow-slate-300/50 group"
+                    style={{ background: memoryGradient }}
+                >
+                    {/* Gradient üzeri dekoratif pattern */}
+                    <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1.5px, transparent 1.5px)", backgroundSize: "20px 20px" }} />
+                    {/* Büyük emoji dekorasyon */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="text-[8rem] opacity-40 select-none">☕</span>
+                    </div>
 
                     {/* Fotoğraf Üzeri Gradient (Okunabilirlik için) */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -379,8 +384,10 @@ function ScreenStep3() {
                             {/* Avatarlar ve İsimler */}
                             <div className="flex items-center gap-3">
                                 <div className="flex -space-x-3">
-                                    <img src="https://i.pravatar.cc/150?u=burak" alt="User 1" className="w-10 h-10 rounded-full border-2 border-white object-cover" />
-                                    <img src="https://i.pravatar.cc/150?u=can" alt="User 2" className="w-10 h-10 rounded-full border-2 border-white object-cover" />
+                                    {/* Yerel SVG Avatar 1 */}
+                                    <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white font-bold text-sm">B</div>
+                                    {/* Yerel SVG Avatar 2 */}
+                                    <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-white font-bold text-sm">C</div>
                                 </div>
                                 <div className="text-white">
                                     <p className="text-sm font-bold leading-tight">Burak & Can</p>

@@ -62,13 +62,12 @@ export default function Navbar() {
                     </span>
                 </Link>
 
-                {/* --- MASAÜSTÜ LİNKLER (DÜZELTİLEN KISIM) --- */}
+                {/* --- MASAÜSTÜ LİNKLER --- */}
                 <div className="hidden md:flex items-center gap-6 text-sm font-bold text-slate-500 whitespace-nowrap">
                     <Link href="/#features" className="hover:text-brand-500 transition-colors">{t.navbar.features}</Link>
                     <Link href="/#testimonials" className="hover:text-brand-500 transition-colors">{t.navbar.testimonials}</Link>
                     <Link href="/#faq" className="hover:text-brand-500 transition-colors">{t.navbar.faq}</Link>
                     <Link href="/blog" className="hover:text-brand-500 transition-colors">Blog</Link>
-                    <Link href="/feedback" className="hover:text-brand-500 transition-colors">Geri Bildirim</Link>
                 </div>
 
                 {/* --- MASAÜSTÜ SAĞ TARAF --- */}
@@ -136,7 +135,6 @@ export default function Navbar() {
                         <Link href="/#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.testimonials}</Link>
                         <Link href="/#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.faq}</Link>
                         <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">Blog</Link>
-                        <Link href="/feedback" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">Geri Bildirim</Link>
                     </div>
 
                     <div className="h-px bg-slate-200 w-full"></div>
