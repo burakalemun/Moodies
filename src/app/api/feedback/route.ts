@@ -1,28 +1,30 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const TO_EMAIL = process.env.FEEDBACK_TO_EMAIL || "destek@moodies.app";
-
 export async function POST(req: NextRequest) {
-    try {
-        const body = await req.json();
-        const { type, name, email, subject, message, priority, appVersion, device } = body;
+  try {
+    // Vercel build esnasında patlamaması için (API key env variable eksikliği)
+    // objeyi sadece POST isteği geldiğinde (runtime'da) oluşturuyoruz.
+    const resend = new Resend(process.env.RESEND_API_KEY || "dummy_key");
+    const TO_EMAIL = process.env.FEEDBACK_TO_EMAIL || "destek@moodies.app";
 
-        if (!type || !message) {
-            return NextResponse.json({ error: "Eksik alan" }, { status: 400 });
-        }
+    const body = await req.json();
+    const { type, name, email, subject, message, priority, appVersion, device } = body;
 
-        // Form tipine göre konu ve içerik
-        const typeLabels: Record<string, string> = {
-            request: "💬 İstek / Görüş",
-            feature: "✨ Özellik İsteği",
-            bug: "🐛 Hata Bildirimi",
-        };
+    if (!type || !message) {
+      return NextResponse.json({ error: "Eksik alan" }, { status: 400 });
+    }
 
-        const subjectLine = `[Moodies ${typeLabels[type] || "Bildirim"}] ${subject || "Yeni mesaj"}`;
+    // Form tipine göre konu ve içerik
+    const typeLabels: Record<string, string> = {
+      request: "💬 İstek / Görüş",
+      feature: "✨ Özellik İsteği",
+      bug: "🐛 Hata Bildirimi",
+    };
 
-        const htmlContent = `
+    const subjectLine = `[Moodies ${typeLabels[type] || "Bildirim"}] ${subject || "Yeni mesaj"}`;
+
+    const htmlContent = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #fafaf9; border-radius: 16px;">
         <div style="background: #22c55e; padding: 20px 24px; border-radius: 12px; margin-bottom: 24px;">
           <h1 style="color: white; margin: 0; font-size: 20px;">${typeLabels[type] || "Yeni Bildirim"}</h1>
@@ -48,22 +50,22 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
-        const { error } = await resend.emails.send({
-            from: "Moodies Feedback <onboarding@resend.dev>",
-            to: [TO_EMAIL],
-            subject: subjectLine,
-            html: htmlContent,
-            replyTo: email || undefined,
-        });
+    const { error } = await resend.emails.send({
+      from: "Moodies Feedback <onboarding@resend.dev>",
+      to: [TO_EMAIL],
+      subject: subjectLine,
+      html: htmlContent,
+      replyTo: email || undefined,
+    });
 
-        if (error) {
-            console.error("Resend error:", error);
-            return NextResponse.json({ error: "E-posta gönderilemedi" }, { status: 500 });
-        }
-
-        return NextResponse.json({ success: true });
-    } catch (err) {
-        console.error("API error:", err);
-        return NextResponse.json({ error: "Sunucu hatası" }, { status: 500 });
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json({ error: "E-posta gönderilemedi" }, { status: 500 });
     }
+
+    return NextResponse.json({ success: true });
+  } catch (err) {
+    console.error("API error:", err);
+    return NextResponse.json({ error: "Sunucu hatası" }, { status: 500 });
+  }
 }
