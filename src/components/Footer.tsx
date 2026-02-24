@@ -35,7 +35,7 @@ export default function Footer() {
 
                         {/* App Store Badge */}
                         <button className="bg-slate-900 text-white px-4 py-2 rounded-xl flex items-center gap-3 hover:bg-slate-800 transition-colors shadow-sm w-fit">
-                            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.8-1.31.05-2.3-1.23-3.14-2.47-1.72-2.48-2.92-6.52-1.22-9.45 1.07-1.87 2.96-2.95 5.06-2.95 1.54 0 2.87 1.05 3.75 1.05.88 0 2.53-1.28 4.25-1.09 1.45.06 2.57.59 3.29 1.63-2.65 1.57-2.18 5.76.62 6.95-.5 1.49-1.2 2.98-2.32 4.62zm-3.27-14.8c.68-1.2 1.14-2.86.99-4.52-1.46.12-3.23 1.03-4.29 2.29-.63.75-1.18 2.08-1.04 3.76 1.64.13 3.3-1.03 4.34-1.53z"/></svg>
+                            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.8-1.31.05-2.3-1.23-3.14-2.47-1.72-2.48-2.92-6.52-1.22-9.45 1.07-1.87 2.96-2.95 5.06-2.95 1.54 0 2.87 1.05 3.75 1.05.88 0 2.53-1.28 4.25-1.09 1.45.06 2.57.59 3.29 1.63-2.65 1.57-2.18 5.76.62 6.95-.5 1.49-1.2 2.98-2.32 4.62zm-3.27-14.8c.68-1.2 1.14-2.86.99-4.52-1.46.12-3.23 1.03-4.29 2.29-.63.75-1.18 2.08-1.04 3.76 1.64.13 3.3-1.03 4.34-1.53z" /></svg>
                             <div className="text-left">
                                 <div className="text-[10px] font-medium opacity-80">Download on the</div>
                                 <div className="text-xs font-bold leading-none">App Store</div>
@@ -49,6 +49,8 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm text-slate-500">
                             <li><Link href="/#features" className="hover:text-brand-500 transition-colors">{t.footer.features}</Link></li>
                             <li><Link href="/#faq" className="hover:text-brand-500 transition-colors">{t.footer.faq}</Link></li>
+                            <li><Link href="/blog" className="hover:text-brand-500 transition-colors">Blog</Link></li>
+                            <li><Link href="/feedback" className="hover:text-brand-500 transition-colors">Geri Bildirim</Link></li>
                             <li><span className="text-slate-300 cursor-not-allowed">{t.footer.android}</span></li>
                             <li><span className="text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full text-xs font-bold">v2.0</span></li>
                         </ul>
@@ -78,7 +80,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm text-slate-500">
                             <li>
                                 <a href="mailto:destek@moodies.app" className="hover:text-brand-500 transition-colors flex items-center gap-2">
-                                    <Mail size={16}/> destek@moodies.app
+                                    <Mail size={16} /> destek@moodies.app
                                 </a>
                             </li>
 
@@ -110,7 +112,7 @@ export default function Footer() {
                 {/* --- ALT KISIM (COPYRIGHT) --- */}
                 <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-slate-400">
-                        © 2024 Moodies Inc. {t.footer.rights} {t.footer.made_in}
+                        © 2026 Moodies Inc. {t.footer.rights} {t.footer.made_in}
                     </p>
                     <div className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>

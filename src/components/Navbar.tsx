@@ -64,10 +64,11 @@ export default function Navbar() {
 
                 {/* --- MASAÜSTÜ LİNKLER (DÜZELTİLEN KISIM) --- */}
                 <div className="hidden md:flex items-center gap-6 text-sm font-bold text-slate-500 whitespace-nowrap">
-                    {/* Başına / koyduk ki ana sayfaya gidip scroll yapsın */}
                     <Link href="/#features" className="hover:text-brand-500 transition-colors">{t.navbar.features}</Link>
                     <Link href="/#testimonials" className="hover:text-brand-500 transition-colors">{t.navbar.testimonials}</Link>
                     <Link href="/#faq" className="hover:text-brand-500 transition-colors">{t.navbar.faq}</Link>
+                    <Link href="/blog" className="hover:text-brand-500 transition-colors">Blog</Link>
+                    <Link href="/feedback" className="hover:text-brand-500 transition-colors">Geri Bildirim</Link>
                 </div>
 
                 {/* --- MASAÜSTÜ SAĞ TARAF --- */}
@@ -131,10 +132,11 @@ export default function Navbar() {
                     className="pointer-events-auto absolute top-full mt-4 w-[calc(100%-2rem)] max-w-sm bg-white/90 backdrop-blur-2xl border border-white/50 shadow-2xl rounded-3xl p-6 flex flex-col gap-6 animate-in fade-in slide-in-from-top-4 duration-300 md:hidden z-[50]"
                 >
                     <div className="flex flex-col gap-4 text-center">
-                        {/* Mobilde de Link ve /# kullandık */}
                         <Link href="/#features" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.features}</Link>
                         <Link href="/#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.testimonials}</Link>
                         <Link href="/#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">{t.navbar.faq}</Link>
+                        <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">Blog</Link>
+                        <Link href="/feedback" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold text-slate-600 hover:text-brand-600 transition-colors">Geri Bildirim</Link>
                     </div>
 
                     <div className="h-px bg-slate-200 w-full"></div>
